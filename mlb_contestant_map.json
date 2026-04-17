@@ -1,0 +1,5112 @@
+{
+  "Trey Yesavage": {
+    "id": 9126,
+    "team": "Toronto Blue Jays",
+    "source": "Manual"
+  },
+  "Emmet Sheehan": {
+    "id": 9120,
+    "team": "Los Angeles Dodgers",
+    "source": "Manual"
+  },
+  "Ben Rice": {
+    "id": 9043,
+    "team": "New York Yankees",
+    "source": "Manual"
+  },
+  "Mickey Moniak": {
+    "id": 5078,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Hunter Goodman": {
+    "id": 9041,
+    "team": "Colorado Rockies",
+    "source": "Manual"
+  },
+  "Ceddanne Rafaela": {
+    "id": 9040,
+    "team": "Boston Red Sox",
+    "source": "Manual"
+  },
+  "Wilyer Abreu": {
+    "id": 9039,
+    "team": "Boston Red Sox",
+    "source": "Manual"
+  },
+  "Jackson Holliday": {
+    "id": 9038,
+    "team": "Baltimore Orioles",
+    "source": "Manual"
+  },
+  "Agustin Ramirez": {
+    "id": 9037,
+    "team": "Miami Marlins",
+    "source": "Manual"
+  },
+  "Michael Busch": {
+    "id": 9036,
+    "team": "Chicago Cubs",
+    "source": "Manual"
+  },
+  "Nick Kurtz": {
+    "id": 9035,
+    "team": "Athletics",
+    "source": "Manual"
+  },
+  "Pete Crow-Armstrong": {
+    "id": 9023,
+    "team": "Chicago Cubs",
+    "source": "Manual"
+  },
+  "Matt McLain": {
+    "id": 8898,
+    "team": "Cincinnati Reds",
+    "source": "Manual"
+  },
+  "AJ Smith-Shawver": {
+    "id": 8880,
+    "team": "Atlanta Braves",
+    "source": "Manual"
+  },
+  "Junior Caminero": {
+    "id": 8860,
+    "team": "Tampa Bay Rays",
+    "source": "Manual"
+  },
+  "James Wood": {
+    "id": 8859,
+    "team": "Washington Nationals",
+    "source": "Manual"
+  },
+  "Matt Mervis": {
+    "id": 8858,
+    "team": "Miami Marlins",
+    "source": "Manual"
+  },
+  "Andy Pages": {
+    "id": 8274,
+    "team": "Los Angeles Dodgers",
+    "source": "Manual"
+  },
+  "Tanner Bibee": {
+    "id": 8265,
+    "team": "Cleveland Guardians",
+    "source": "Manual"
+  },
+  "Jhonkensy Noel": {
+    "id": 8256,
+    "team": "Cleveland Guardians",
+    "source": "Manual"
+  },
+  "David Fry": {
+    "id": 8255,
+    "team": "Cleveland Guardians",
+    "source": "Manual"
+  },
+  "Jasson Dominguez": {
+    "id": 8233,
+    "team": "New York Yankees",
+    "source": "Manual"
+  },
+  "Anthony Volpe": {
+    "id": 8232,
+    "team": "New York Yankees",
+    "source": "Manual"
+  },
+  "Yuli Gurriel": {
+    "id": 8231,
+    "team": "Kansas City Royals",
+    "source": "Manual"
+  },
+  "Jake Rogers": {
+    "id": 8230,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Trey Sweeney": {
+    "id": 8229,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Brayan Rocchio": {
+    "id": 8228,
+    "team": "Cleveland Guardians",
+    "source": "Manual"
+  },
+  "Kyle Manzardo": {
+    "id": 8227,
+    "team": "Cleveland Guardians",
+    "source": "Manual"
+  },
+  "Austin Wells": {
+    "id": 8226,
+    "team": "New York Yankees",
+    "source": "Manual"
+  },
+  "Colton Cowser": {
+    "id": 8194,
+    "team": "Baltimore Orioles",
+    "source": "Manual"
+  },
+  "Wenceel P\u00e9rez": {
+    "id": 8193,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Jake Bauers": {
+    "id": 8192,
+    "team": "Milwaukee Brewers",
+    "source": "Manual"
+  },
+  "Jackson Chourio": {
+    "id": 8191,
+    "team": "Milwaukee Brewers",
+    "source": "Manual"
+  },
+  "Jackson Merrill": {
+    "id": 8190,
+    "team": "San Diego Padres",
+    "source": "Manual"
+  },
+  "Beau Brieske": {
+    "id": 8151,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Alex Cobb": {
+    "id": 8143,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Davis Martin": {
+    "id": 5420,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Harrison Holmes": {
+    "id": 8128,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Kenneth Rosenberg": {
+    "id": 8078,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Robbie Ray": {
+    "id": 8074,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Carson Fulmer": {
+    "id": 8057,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Paul Skenes": {
+    "id": 8040,
+    "team": "Pittsburgh Pirates",
+    "source": "Manual"
+  },
+  "Yerry Rodriguez": {
+    "id": 8000,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Jack Kochanowicz": {
+    "id": 7998,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Anthony Rendon": {
+    "id": 4943,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Shane Baz": {
+    "id": 7988,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Jared Shuster": {
+    "id": 7987,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Brenton Doyle": {
+    "id": 7950,
+    "team": "Colorado Rockies",
+    "source": "Manual"
+  },
+  "Roansy Contreras": {
+    "id": 5439,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Tyler Holton": {
+    "id": 7907,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Robert Daniel": {
+    "id": 7906,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Miguel Sano": {
+    "id": 5238,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Randy Rodriguez": {
+    "id": 7904,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Eloy Jimenez": {
+    "id": 5206,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Kyle Tyler": {
+    "id": 7846,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "David Villar": {
+    "id": 5209,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Erik Miller": {
+    "id": 7796,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Benjamin Joyce": {
+    "id": 7795,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Keaton Winn": {
+    "id": 7793,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Nick Ahmed": {
+    "id": 7792,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Shaun Anderson": {
+    "id": 7791,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Rafael Marchan": {
+    "id": 7785,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Jonathan Cannon": {
+    "id": 7782,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Brent Suter": {
+    "id": 7773,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Jose Suarez": {
+    "id": 7770,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Humberto Castellanos": {
+    "id": 7769,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Michael Stefanic": {
+    "id": 5204,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Austin Slater": {
+    "id": 1703,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Hogan Harris": {
+    "id": 7766,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Zachary DeLoach": {
+    "id": 7765,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Nick Sandlin": {
+    "id": 7724,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Luis Robert": {
+    "id": 5091,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Michael Conforto": {
+    "id": 7483,
+    "team": "San Francisco Giants",
+    "source": "Manual"
+  },
+  "Luis Guillorme": {
+    "id": 4917,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Oscar Colas": {
+    "id": 7712,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Lenyn Sosa": {
+    "id": 5175,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Nicholas Nastrini": {
+    "id": 7710,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Casey Schmitt": {
+    "id": 7709,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Cody Poteet": {
+    "id": 7708,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Zachary Remillard": {
+    "id": 7707,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Garrett Crochet": {
+    "id": 7706,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Daniel Mendick": {
+    "id": 5079,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Erick Fedde": {
+    "id": 5327,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Dominic Fletcher": {
+    "id": 7703,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Neil Pallante": {
+    "id": 7702,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Martin Maldonado": {
+    "id": 5011,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Chris Flexen": {
+    "id": 5880,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Raymond Kerr": {
+    "id": 7699,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Tyler Fitzgerald": {
+    "id": 7698,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Bryan Ramos": {
+    "id": 7697,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Corey Julks": {
+    "id": 7696,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Andrew Benintendi": {
+    "id": 4990,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Nicky Lopez": {
+    "id": 2768,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Gavin Sheets": {
+    "id": 4973,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Korey Lee": {
+    "id": 5215,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Paul DeJong": {
+    "id": 5247,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Tommy Pham": {
+    "id": 4706,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Andrew Vaughn": {
+    "id": 4934,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Spencer Howard": {
+    "id": 7664,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Brett Wisely": {
+    "id": 7661,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Mason Black": {
+    "id": 7660,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Blake Snell": {
+    "id": 5351,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Patrick Bailey": {
+    "id": 7657,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Logan Webb": {
+    "id": 5332,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Jordan Hicks": {
+    "id": 7344,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Mike Yastrzemski": {
+    "id": 4902,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Blake Sabol": {
+    "id": 7646,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Marco Luciano": {
+    "id": 7645,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "LaMonte Wade": {
+    "id": 5194,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Heliot Ramos": {
+    "id": 5085,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Matt Chapman": {
+    "id": 4978,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Wilmer Flores": {
+    "id": 4901,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Kyle Harrison": {
+    "id": 7633,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Curtis Casali": {
+    "id": 5086,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Thairo Estrada": {
+    "id": 4905,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Jorge Soler": {
+    "id": 4885,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Luis Matos": {
+    "id": 7626,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Kyle Muller": {
+    "id": 5852,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Jo Adell": {
+    "id": 5109,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Kyren Paris": {
+    "id": 7587,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Michael Ford": {
+    "id": 7566,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Jose Soriano": {
+    "id": 7559,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Kevin Pillar": {
+    "id": 5069,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Patrick Sandoval": {
+    "id": 5368,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Walker Buehler": {
+    "id": 7546,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Tyler Anderson": {
+    "id": 5402,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Cole Tucker": {
+    "id": 7544,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Matt Thaiss": {
+    "id": 5407,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Griffin Canning": {
+    "id": 7541,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Brandon Drury": {
+    "id": 4704,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Reid Detmers": {
+    "id": 5390,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Ehire Adrianza": {
+    "id": 5146,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Zachary Neto": {
+    "id": 7534,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Taylor Ward": {
+    "id": 5040,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Logan O'Hoppe": {
+    "id": 5562,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Nolan Schanuel": {
+    "id": 7531,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Willie Calhoun": {
+    "id": 5476,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Luis Rengifo": {
+    "id": 4954,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Evan Carter": {
+    "id": 7523,
+    "team": "Texas Rangers",
+    "source": "Manual"
+  },
+  "Simeon Woods-Richardson": {
+    "id": 7511,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Casey Mize": {
+    "id": 7510,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Kenta Maeda": {
+    "id": 7509,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Colt Keith": {
+    "id": 7508,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Buddy Kennedy": {
+    "id": 5158,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Masataka Yoshida": {
+    "id": 7482,
+    "team": "Boston Red Sox",
+    "source": "Manual"
+  },
+  "Parker Meadows": {
+    "id": 7481,
+    "team": "Detroit Tigers",
+    "source": "Manual"
+  },
+  "Wyatt Langford": {
+    "id": 7480,
+    "team": "Texas Rangers",
+    "source": "Manual"
+  },
+  "Otto Lopez": {
+    "id": 7479,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Cooper Criswell": {
+    "id": 7437,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Edouard Julien": {
+    "id": 7420,
+    "team": "Minnesota Twins",
+    "source": "Manual"
+  },
+  "Reynaldo Lopez": {
+    "id": 7405,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Aaron Ashby": {
+    "id": 7403,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Christian Encarnacion-Strand": {
+    "id": 7361,
+    "team": "Cincinnati Reds",
+    "source": "Manual"
+  },
+  "Max Meyer": {
+    "id": 7345,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Dayton Hall": {
+    "id": 7343,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jonah Bride": {
+    "id": 5142,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "A.J. Puk": {
+    "id": 7339,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Gavin Stone": {
+    "id": 7318,
+    "team": "Los Angeles Dodgers",
+    "source": "Manual"
+  },
+  "Bobby Miller": {
+    "id": 7317,
+    "team": "Los Angeles Dodgers",
+    "source": "Manual"
+  },
+  "Bowden Francis": {
+    "id": 7316,
+    "team": "Toronto Blue Jays",
+    "source": "Manual"
+  },
+  "Alec Marsh": {
+    "id": 7315,
+    "team": "Kansas City Royals",
+    "source": "Manual"
+  },
+  "Jose Ramirez": {
+    "id": 4797,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Yoshinobu Yamamoto": {
+    "id": 7261,
+    "team": "Los Angeles Dodgers",
+    "source": "Manual"
+  },
+  "Joseph Mantiply": {
+    "id": 6644,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "JJ Bleday": {
+    "id": 6412,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Luis Patino": {
+    "id": 6411,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Ken Waldichuk": {
+    "id": 6394,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Elly de la Cruz": {
+    "id": 6369,
+    "team": "Cincinnati Reds",
+    "source": "Manual"
+  },
+  "Fernando Cruz": {
+    "id": 6368,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Carlos Perez": {
+    "id": 5387,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Sean Newcomb": {
+    "id": 6066,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Trevor Megill": {
+    "id": 6057,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Paul Blackburn": {
+    "id": 5928,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "JP Sears": {
+    "id": 6055,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Mason Miller": {
+    "id": 6054,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Aledmys Diaz": {
+    "id": 4946,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Tyler Soderstrom": {
+    "id": 6052,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Esteury Ruiz": {
+    "id": 5220,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Jordan Diaz": {
+    "id": 5529,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Luis Medina": {
+    "id": 6048,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Nick Allen": {
+    "id": 5162,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Ryan Noda": {
+    "id": 6041,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Zachary Gelof": {
+    "id": 6040,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Lawrence Butler": {
+    "id": 6039,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Brent Rooker": {
+    "id": 5211,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Tony Kemp": {
+    "id": 4810,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Shea Langeliers": {
+    "id": 5291,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Kevin Smith": {
+    "id": 4814,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Seth Brown": {
+    "id": 4930,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Taylor Clarke": {
+    "id": 5979,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Travis Blankenhorn": {
+    "id": 5974,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Caleb Ferguson": {
+    "id": 5968,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Pedro Avila": {
+    "id": 5967,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Ryan Pepiot": {
+    "id": 5966,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Vincent Capra": {
+    "id": 5965,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Grayson Rodriguez": {
+    "id": 5964,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Erasmo Ramirez": {
+    "id": 5963,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Jordan Westburg": {
+    "id": 5962,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Zachary Thompson": {
+    "id": 5961,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Brian O'Keefe": {
+    "id": 5960,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Angel Zerpa": {
+    "id": 5959,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Fernando Tatis Jr.": {
+    "id": 5958,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Andre Jackson": {
+    "id": 5957,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Michael King": {
+    "id": 5956,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Shawn Armstrong": {
+    "id": 5955,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Denyi Reyes": {
+    "id": 5954,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Dylan Coleman": {
+    "id": 5953,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Xzavion Curry": {
+    "id": 5952,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Tyson Blach": {
+    "id": 5951,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Joan Adon": {
+    "id": 5950,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Zack Littell": {
+    "id": 5949,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Reese Olson": {
+    "id": 5948,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Hyun-Jin Ryu": {
+    "id": 5947,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Dane Myers": {
+    "id": 5946,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Jacob Rogers": {
+    "id": 5945,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Tomaso Milone": {
+    "id": 5944,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Tarik Skubal": {
+    "id": 5943,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Kolby Allard": {
+    "id": 5942,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Tanner Banks": {
+    "id": 5941,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Gavin Williams": {
+    "id": 5940,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Bo Naylor": {
+    "id": 5939,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Jacob Amaya": {
+    "id": 5938,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Dairon Blanco": {
+    "id": 5937,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Trevor Richards": {
+    "id": 5936,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Yonny Chirinos": {
+    "id": 5935,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Jaime Barria": {
+    "id": 5934,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Dinelson Lamet": {
+    "id": 5933,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Joshua Lester": {
+    "id": 5932,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "James Paxton": {
+    "id": 5931,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "John Brebbia": {
+    "id": 5930,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Royce Lewis": {
+    "id": 5929,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Benjamin Rortvedt": {
+    "id": 5927,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Kyle Hendricks": {
+    "id": 5926,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Chase Anderson": {
+    "id": 5925,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Matthew Liberatore": {
+    "id": 5924,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Cody Bradford": {
+    "id": 5923,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Alex Faedo": {
+    "id": 5922,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Adam Haseley": {
+    "id": 5921,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Antonio Senzatela": {
+    "id": 5920,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Brandon Bielak": {
+    "id": 5919,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Connor Seabold": {
+    "id": 5918,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Caleb Kilian": {
+    "id": 5917,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Ryan Yarbrough": {
+    "id": 5916,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Bryan Hoeing Hoeing": {
+    "id": 5915,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Peyton Battenfield": {
+    "id": 5914,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Devin Smeltzer": {
+    "id": 5913,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Calvin Faucher": {
+    "id": 5912,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Yonny Hernandez": {
+    "id": 5911,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Luke Weaver": {
+    "id": 5910,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Jose Butto": {
+    "id": 5909,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Noah Davis": {
+    "id": 5908,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Brandon Dixon": {
+    "id": 5906,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Drey Jameson": {
+    "id": 5905,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Garrett Whitlock": {
+    "id": 5904,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Jalen Beeks": {
+    "id": 5903,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Seth Lugo": {
+    "id": 5897,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Matthew Beaty": {
+    "id": 5883,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Steven Matz": {
+    "id": 5879,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Yusei Kikuchi": {
+    "id": 5878,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Matthew Strahm": {
+    "id": 5877,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Matthew Boyd": {
+    "id": 5876,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Hunter Brown": {
+    "id": 5875,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Jake Woodford": {
+    "id": 5874,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Ryne Nelson": {
+    "id": 5873,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Ryan Weathers": {
+    "id": 5872,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Michael Kopech": {
+    "id": 5871,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Anthony DeSclafani": {
+    "id": 5870,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Connor Overton": {
+    "id": 5869,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Tyler Mahle": {
+    "id": 5868,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Trevor Williams": {
+    "id": 5867,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Brad Keller": {
+    "id": 5866,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Austin Gomber": {
+    "id": 5865,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Tanner Houck": {
+    "id": 5864,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Vincent Velasquez": {
+    "id": 5863,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "MacKenzie Gore": {
+    "id": 5862,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Chris Sale": {
+    "id": 5861,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Tylor Megill": {
+    "id": 5860,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Zach Eflin": {
+    "id": 5859,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Hunter Gaddis": {
+    "id": 5857,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Nick Martinez": {
+    "id": 5856,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Yainer Diaz": {
+    "id": 5855,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Francisco Alvarez": {
+    "id": 5590,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Josh Fleming": {
+    "id": 5577,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Braxton Garrett": {
+    "id": 5576,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Bryan Garcia": {
+    "id": 5574,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Hayden Wesneski": {
+    "id": 5573,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Hunter Greene": {
+    "id": 5572,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Tyler Glasnow": {
+    "id": 5571,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Luis Severino": {
+    "id": 5570,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Luis Campusano": {
+    "id": 5569,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Luis Ortiz": {
+    "id": 5568,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Jay Proctor": {
+    "id": 5567,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Abraham Almonte": {
+    "id": 5565,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Jack Flaherty": {
+    "id": 5564,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Jon Gray": {
+    "id": 5561,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Louie Varland": {
+    "id": 5560,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Nathan Eovaldi": {
+    "id": 5559,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Michael Lorenzen": {
+    "id": 5558,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Josh Winder": {
+    "id": 5557,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Michael Siani": {
+    "id": 5556,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Ji-Hwan Bae": {
+    "id": 5555,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Miles Mastrobuoni": {
+    "id": 5554,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Mark Payton": {
+    "id": 5553,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Graham Ashcraft": {
+    "id": 5552,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Johan Oviedo": {
+    "id": 5551,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Jared Young": {
+    "id": 5550,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Jesus Quiroz": {
+    "id": 5549,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Cody Morris": {
+    "id": 5548,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Ezequiel Tovar": {
+    "id": 5547,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Terrance Gore": {
+    "id": 5546,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Benjamin DeLuzio": {
+    "id": 5545,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Will Brennan": {
+    "id": 5543,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Nate Eaton": {
+    "id": 5542,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Bryce Elder": {
+    "id": 5541,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Adrian Houser": {
+    "id": 5540,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Bailey Ober": {
+    "id": 5539,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Zack Wheeler": {
+    "id": 5538,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Cole Ragans": {
+    "id": 5536,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Michael Grove": {
+    "id": 5535,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Mark Vientos": {
+    "id": 5534,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Cory Abbott": {
+    "id": 5533,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Livan Soto": {
+    "id": 5532,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Wade Miley": {
+    "id": 5531,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Matt Wallner": {
+    "id": 5530,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Kenneth Waldichuk": {
+    "id": 5528,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Jason Alexander": {
+    "id": 5527,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Lewis Brinson": {
+    "id": 5521,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Dalton Guthrie": {
+    "id": 5502,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Jordan Groshans": {
+    "id": 5501,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Israel Pineda": {
+    "id": 5500,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Michael Hermosillo": {
+    "id": 5499,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Alec Burleson": {
+    "id": 5484,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Donald Greinke": {
+    "id": 5480,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Tyler Wells": {
+    "id": 5479,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Nestor Cortes Jr.": {
+    "id": 5478,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Triston Casas": {
+    "id": 5477,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Joseph Wentz": {
+    "id": 5474,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Alan Trejo": {
+    "id": 5471,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Joshua Jung": {
+    "id": 5470,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Cody Thomas": {
+    "id": 5469,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Carlos Carrasco": {
+    "id": 5468,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Eguy Rosario": {
+    "id": 5467,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Oswald Peraza": {
+    "id": 5466,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Spencer Steer": {
+    "id": 5465,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Clarke Schmidt": {
+    "id": 5464,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Connor Wong": {
+    "id": 5463,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Ryan Kreidler": {
+    "id": 5462,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Josiah Gray": {
+    "id": 5461,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Clayton Kershaw": {
+    "id": 5460,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Gunnar Henderson": {
+    "id": 5459,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Michael Toglia": {
+    "id": 5458,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Cristian Javier": {
+    "id": 5457,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Corbin Carroll": {
+    "id": 5456,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Javier Assad": {
+    "id": 5455,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Garrett Mitchell": {
+    "id": 5454,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Madison Bumgarner": {
+    "id": 5453,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Jacob Odorizzi": {
+    "id": 5452,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Adrian Sampson": {
+    "id": 5451,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Eric Lauer": {
+    "id": 5450,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Patrick Corbin": {
+    "id": 5449,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Julio Urias": {
+    "id": 5448,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Edward Cabrera": {
+    "id": 5447,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Nick Pivetta": {
+    "id": 5445,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Max Scherzer": {
+    "id": 5444,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Sean Manaea": {
+    "id": 5443,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Jakob Junis": {
+    "id": 5442,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Kohei Arihara": {
+    "id": 5441,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Adrian Martinez": {
+    "id": 5440,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Noah Syndergaard": {
+    "id": 5438,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "David Hensley": {
+    "id": 5437,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Dallas Keuchel": {
+    "id": 5436,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Todd Smyly": {
+    "id": 5435,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Brandon Woodruff": {
+    "id": 5434,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Kyle Freeland": {
+    "id": 5433,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "David Peterson": {
+    "id": 5432,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Daniel Lynch": {
+    "id": 5431,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Paolo Espino": {
+    "id": 5430,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Luis Cessa": {
+    "id": 5429,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Tyler Beede": {
+    "id": 5428,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Kyle Gibson": {
+    "id": 5427,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Richard Hill": {
+    "id": 5426,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Yu Darvish": {
+    "id": 5425,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Alek Manoah": {
+    "id": 5424,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Alexander Cobb": {
+    "id": 5423,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Sonny Gray": {
+    "id": 5422,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Merrill Kelly": {
+    "id": 5421,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Jordan Montgomery": {
+    "id": 5419,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Charlie Morton": {
+    "id": 5418,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Sandy Alcantara": {
+    "id": 5417,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Dustin May": {
+    "id": 5416,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Adam Oller": {
+    "id": 5415,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Domingo German": {
+    "id": 5414,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Luis Castillo": {
+    "id": 5413,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Zach Plesac": {
+    "id": 5412,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Jose Urquidy": {
+    "id": 5411,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Dean Kremer": {
+    "id": 5410,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Jeffrey Springs": {
+    "id": 5409,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Eduardo Rodriguez": {
+    "id": 5408,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Ryan Aguilar": {
+    "id": 5406,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Freddy Peralta": {
+    "id": 5405,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Justin Steele": {
+    "id": 5404,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Trevor Rogers": {
+    "id": 5403,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Bailey Falter": {
+    "id": 5401,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Bryse Wilson": {
+    "id": 5400,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jose Quintana": {
+    "id": 5399,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Spencer Strider": {
+    "id": 5398,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Michael Minor": {
+    "id": 5397,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Michael Wacha": {
+    "id": 5396,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Chad Kuhl": {
+    "id": 5395,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Lance McCullers Jr.": {
+    "id": 5394,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Kyle Bradish": {
+    "id": 5393,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Tyler Alexander": {
+    "id": 5392,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Glenn Otto": {
+    "id": 5391,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Mitchell White": {
+    "id": 5389,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Chris Bassitt": {
+    "id": 5388,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Joe Musgrove": {
+    "id": 5386,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Kris Bubic": {
+    "id": 5385,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Johnny Cueto": {
+    "id": 5384,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Tommy Henry": {
+    "id": 5383,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Joe Ryan": {
+    "id": 5382,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Alex Wood": {
+    "id": 5381,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Gerrit Cole": {
+    "id": 5380,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "John Patrick Sears": {
+    "id": 5379,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Logan Gilbert": {
+    "id": 5378,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Shane Bieber": {
+    "id": 5377,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "James Kaprielian": {
+    "id": 5376,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Jameson Taillon": {
+    "id": 5375,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Jacob deGrom": {
+    "id": 5374,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Ryan Feltner": {
+    "id": 5373,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Justin Dunn": {
+    "id": 5372,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Triston McKenzie": {
+    "id": 5371,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Marco Gonzales": {
+    "id": 5370,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Marcus Stroman": {
+    "id": 5369,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Drew Rasmussen": {
+    "id": 5367,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Dakota Hudson": {
+    "id": 5366,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Luis Garcia": {
+    "id": 5113,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Christopher Archer": {
+    "id": 5364,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Kevin Gausman": {
+    "id": 5363,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Kutter Crawford": {
+    "id": 5362,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Lance Lynn": {
+    "id": 5361,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Jordan Lyles": {
+    "id": 5360,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Aaron Nola": {
+    "id": 5359,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Framber Valdez": {
+    "id": 5358,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Dylan Bundy": {
+    "id": 5357,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Miles Mikolas": {
+    "id": 5356,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Chuckie Robinson": {
+    "id": 5355,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Cristopher Sanchez": {
+    "id": 5354,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Timothy James Zeuch": {
+    "id": 5353,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Cal Quantrill": {
+    "id": 5352,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Mitch Keller": {
+    "id": 5350,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Kyle Wright": {
+    "id": 5349,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Brayan Bello": {
+    "id": 5348,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Andrew Heaney": {
+    "id": 5347,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Anibal Sanchez": {
+    "id": 5346,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "George Kirby": {
+    "id": 5345,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Jesus Luzardo": {
+    "id": 5344,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Cole Irvin": {
+    "id": 5343,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Martin Perez": {
+    "id": 5342,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Jose Urena": {
+    "id": 5341,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Shane McClanahan": {
+    "id": 5340,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Michael Mayers": {
+    "id": 5339,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Spenser Watkins": {
+    "id": 5338,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Lucas Giolito": {
+    "id": 5337,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Jose Berrios": {
+    "id": 5336,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Zac Gallen": {
+    "id": 5335,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Brady Singer": {
+    "id": 5334,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Matt Manning": {
+    "id": 5333,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Aaron Civale": {
+    "id": 5331,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Mike Clevinger": {
+    "id": 5330,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Zach Logue": {
+    "id": 5329,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Pablo Lopez": {
+    "id": 5328,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Jonathan Heasley": {
+    "id": 5326,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Zachary Davies": {
+    "id": 5325,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Aaron Sanchez": {
+    "id": 5324,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Justin Verlander": {
+    "id": 5323,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Ross Stripling": {
+    "id": 5322,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Corey Kluber": {
+    "id": 5320,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Zachary Short": {
+    "id": 5319,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "German Marquez": {
+    "id": 5318,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Dane Dunning": {
+    "id": 5317,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Austin Voth": {
+    "id": 5316,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Dylan Cease": {
+    "id": 5315,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Andrew Hutchison": {
+    "id": 5314,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Carlos Rodon": {
+    "id": 5313,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Joshua Winckowski": {
+    "id": 5312,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Jonathan Brubaker": {
+    "id": 5311,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Max Fried": {
+    "id": 5310,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Adam Wainwright": {
+    "id": 5309,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Nick Lodolo": {
+    "id": 5308,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Ranger Suarez": {
+    "id": 5307,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Francelis Montas": {
+    "id": 5306,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Taijuan Walker": {
+    "id": 5305,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Robert Ray": {
+    "id": 5304,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Anthony Gonsolin": {
+    "id": 5303,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Corbin Burnes": {
+    "id": 5302,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Drew Waters": {
+    "id": 5301,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Timothy Beckham": {
+    "id": 5300,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "William Benson": {
+    "id": 5299,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Kyle Stowers": {
+    "id": 5298,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Oswaldo Cabrera": {
+    "id": 5297,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Roman Gonzalez": {
+    "id": 5296,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Alex Call": {
+    "id": 5295,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Dominic Nunez": {
+    "id": 5294,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Stone Garrett": {
+    "id": 5293,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Brett Baty": {
+    "id": 5292,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Wynton Bernard": {
+    "id": 5290,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Deven Marrero": {
+    "id": 5289,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Anthony Wolters": {
+    "id": 5288,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Nicholas Maton": {
+    "id": 5287,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Chadwick Tromp": {
+    "id": 5286,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Cal Stevenson": {
+    "id": 5268,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Vaughn Grissom": {
+    "id": 5267,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Jose Godoy": {
+    "id": 5266,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Kerry Carpenter": {
+    "id": 5265,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Mario Feliciano": {
+    "id": 5264,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jose Rojas": {
+    "id": 5263,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Michael Massey": {
+    "id": 5228,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Mitch Haniger": {
+    "id": 5261,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Peyton Burdick": {
+    "id": 5260,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Bubba Thompson": {
+    "id": 5259,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Jose Barrero": {
+    "id": 5258,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Miguel Vargas": {
+    "id": 5257,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Terrin Vavra": {
+    "id": 5256,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Tyler Freeman": {
+    "id": 5255,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "James Outman": {
+    "id": 5254,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Bryce Johnson": {
+    "id": 5253,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Joshua Palacios": {
+    "id": 5252,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Joey Meneses": {
+    "id": 5251,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Ildemaro Vargas": {
+    "id": 1616,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Seth Beer": {
+    "id": 5249,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Jake Cave": {
+    "id": 5248,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Charles Leblanc": {
+    "id": 5246,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Dixon Machado": {
+    "id": 5245,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Jarred Kelenic": {
+    "id": 5244,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Dillon Thomas": {
+    "id": 5243,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Jaylin Davis": {
+    "id": 5241,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Jake Fraley": {
+    "id": 5240,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "David Fletcher": {
+    "id": 5239,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Maikel Garcia": {
+    "id": 5237,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Billy Hamilton": {
+    "id": 5236,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Roman Quinn": {
+    "id": 1774,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Jeffrey Bleday": {
+    "id": 5234,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Yolmer Sanchez": {
+    "id": 5233,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Greg Allen": {
+    "id": 5232,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Mark Kolozsvary": {
+    "id": 5231,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Nicholas Solak": {
+    "id": 5230,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Timothy Locastro": {
+    "id": 5229,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Freddy Fermin": {
+    "id": 5227,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Brandon Lowe": {
+    "id": 5226,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Dermis Garcia": {
+    "id": 5225,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Caleb Hamilton": {
+    "id": 5224,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Elier Hernandez": {
+    "id": 5223,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Sebastian Rivero": {
+    "id": 1716,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Nicholas Pratto": {
+    "id": 5221,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Travis Jankowski": {
+    "id": 5219,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Jacob Marisnick": {
+    "id": 5218,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Akil Baddoo": {
+    "id": 5217,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Matthew Batten": {
+    "id": 5216,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Pedro Severino": {
+    "id": 5214,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jonathan Aranda": {
+    "id": 5213,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Kevin Newman": {
+    "id": 5212,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Nolan Jones": {
+    "id": 5210,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Austin Romine": {
+    "id": 5208,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Jason Delay": {
+    "id": 5207,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Eddie Rosario": {
+    "id": 5205,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Marcus Wilson": {
+    "id": 5203,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Narciso Crook": {
+    "id": 5202,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Sandy Leon": {
+    "id": 5201,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Gabriel Arias": {
+    "id": 5200,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Jason Vosler": {
+    "id": 5199,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Tres Barrera": {
+    "id": 5198,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Skye Bolt": {
+    "id": 5197,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Vimael Machin": {
+    "id": 5196,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Andrew Knapp": {
+    "id": 5195,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Darick Hall": {
+    "id": 5192,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Stephen Piscotty": {
+    "id": 5191,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Kris Bryant": {
+    "id": 1737,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Steven Duggar": {
+    "id": 5189,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Vinnie Pasquantino": {
+    "id": 5188,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Conner Capel": {
+    "id": 5187,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "David Bote": {
+    "id": 5186,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Yermin Mercedes": {
+    "id": 5185,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Monte Harrison": {
+    "id": 5184,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Zachary McKinstry": {
+    "id": 5183,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Max Schrock": {
+    "id": 5182,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Drew Ellis": {
+    "id": 1728,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Mark Contreras": {
+    "id": 5180,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Kevin Padlo": {
+    "id": 1763,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "James McCann": {
+    "id": 5178,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Meibrys Viloria": {
+    "id": 5177,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Cam Gallagher": {
+    "id": 5176,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Jake Meyers": {
+    "id": 5174,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Luke Raley": {
+    "id": 5173,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Edward Olivares": {
+    "id": 5172,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Hoy Park,Hoy Jun Park": {
+    "id": 5171,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Trayce Thompson": {
+    "id": 5170,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Sean Bouchard": {
+    "id": 5169,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "David MacKinnon": {
+    "id": 5168,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Phil Gosselin": {
+    "id": 5167,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Jeter Downs": {
+    "id": 5166,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Donovan Solano": {
+    "id": 5165,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Ivan Herrera": {
+    "id": 5164,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Riley Greene": {
+    "id": 5163,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Yairo Munoz": {
+    "id": 5161,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Bligh Madris": {
+    "id": 5160,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Josh Lowe": {
+    "id": 5159,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Oneil Cruz": {
+    "id": 5157,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "CJ Abrams": {
+    "id": 5156,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Lucas Williams": {
+    "id": 5155,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Liover Peguero": {
+    "id": 5154,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Jerar Encarnacion": {
+    "id": 5153,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "J.J. Matijevic": {
+    "id": 5152,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Brandon Belt": {
+    "id": 1440,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Alex Kirilloff": {
+    "id": 5150,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Lewin Diaz": {
+    "id": 5149,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Justin Upton": {
+    "id": 5148,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Seby Zavala": {
+    "id": 5147,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Jarren Duran": {
+    "id": 5144,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Canaan Smith-Njigba": {
+    "id": 5143,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Robert Refsnyder": {
+    "id": 5141,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Yan Gomes": {
+    "id": 1552,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Rene Pinto": {
+    "id": 5139,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Jonathan India": {
+    "id": 5138,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Victor Reyes": {
+    "id": 5137,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Leody Taveras": {
+    "id": 5136,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Richie Martin": {
+    "id": 5135,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Austin Wynns": {
+    "id": 5133,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Carson Kelly": {
+    "id": 5132,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Dylan Carlson": {
+    "id": 1658,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Willy Adames": {
+    "id": 5130,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Willians Astudillo": {
+    "id": 5129,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Gabriel Moreno": {
+    "id": 5128,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Matthew Vierling": {
+    "id": 5127,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Jack Mayfield": {
+    "id": 5126,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Stephen Vogt": {
+    "id": 5125,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Matt Davidson": {
+    "id": 5124,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Alex J Jackson": {
+    "id": 5122,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Jonathan Arauz": {
+    "id": 5121,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Tyler Nevin": {
+    "id": 1486,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Kike Hernandez": {
+    "id": 1393,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Eddy Alvarez": {
+    "id": 5118,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "TJ Friedl": {
+    "id": 1427,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Tyler O'Neill": {
+    "id": 5116,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Zack Collins": {
+    "id": 1722,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Michael Taylor": {
+    "id": 5114,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Austin Meadows": {
+    "id": 5112,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Jason Heyward": {
+    "id": 5111,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Abraham Toro": {
+    "id": 1627,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Nomar Mazara": {
+    "id": 5108,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Daniel Vogelbach": {
+    "id": 1748,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Hunter Renfroe": {
+    "id": 1607,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Pablo Reyes": {
+    "id": 5105,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Didi Gregorius": {
+    "id": 5104,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Travis Swaggerty": {
+    "id": 5103,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Elehuris Montero": {
+    "id": 5102,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Josh Donaldson": {
+    "id": 1564,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Ezequiel Duran": {
+    "id": 5100,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Giancarlo Stanton": {
+    "id": 1557,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Steele Walker": {
+    "id": 5098,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Yu Chang": {
+    "id": 5097,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Yuli Gurriel,Yulieski Gurriel,Yulieski Gourriel Castill": {
+    "id": 1507,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Nick Madrigal": {
+    "id": 5095,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Zach Reks": {
+    "id": 5094,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Jermaine Palacios": {
+    "id": 5093,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Nick Fortes": {
+    "id": 5092,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Michael Brosseau,Mike Brosseau": {
+    "id": 5090,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Kody Clemens": {
+    "id": 5089,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Mike Ford": {
+    "id": 1622,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "A.J. Pollock": {
+    "id": 5087,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Stuart Fairchild": {
+    "id": 5084,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Robinson Cano": {
+    "id": 1760,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Josh Smith": {
+    "id": 5082,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Cooper Hummel": {
+    "id": 1420,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Dylan Moore": {
+    "id": 1756,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Clint Frazier": {
+    "id": 5077,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Nelson Velazquez": {
+    "id": 5076,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Lourdes Gurriel": {
+    "id": 5075,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Nick Plummer": {
+    "id": 5070,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Ryan McKenna": {
+    "id": 5067,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Oscar Gonzalez": {
+    "id": 5066,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Yadier Molina": {
+    "id": 1657,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Salvador Perez": {
+    "id": 5064,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Michael Harris": {
+    "id": 5063,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Eric Haase": {
+    "id": 5062,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jake Hager": {
+    "id": 5061,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Sam Hilliard": {
+    "id": 5060,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Jordan Luplow": {
+    "id": 5058,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Ha-seong Kim": {
+    "id": 5056,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Garrett Hampson": {
+    "id": 5055,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Jackie Bradley": {
+    "id": 5054,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Tucupita Marcano": {
+    "id": 5053,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Sergio Alcantara": {
+    "id": 5052,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Mark Mathias": {
+    "id": 5051,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Jonathon Berti": {
+    "id": 5049,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Joey Wendle": {
+    "id": 5048,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Chris Owings": {
+    "id": 5047,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Robinson Chirinos": {
+    "id": 5046,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Jazz Chisholm": {
+    "id": 5045,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Bryan De La Cruz": {
+    "id": 5044,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Victor Caratini": {
+    "id": 5043,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Corey Dickerson": {
+    "id": 5042,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Nico Hoerner": {
+    "id": 5041,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Alejo Lopez": {
+    "id": 5039,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Jose Herrera": {
+    "id": 5038,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Trent Grisham": {
+    "id": 5037,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Diego Castillo": {
+    "id": 5036,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Keston Hiura": {
+    "id": 5035,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Cavan Biggio": {
+    "id": 5034,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Jorge Alfaro": {
+    "id": 5033,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Juan Lagares": {
+    "id": 5032,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Sam Haggerty": {
+    "id": 5031,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Lars Nootbaar": {
+    "id": 5030,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Albert Almora Jr.": {
+    "id": 5029,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Donnie Walton": {
+    "id": 5028,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Trevor Larnach": {
+    "id": 5027,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "J.D. Davis": {
+    "id": 5026,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Nolan Gorman": {
+    "id": 5025,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Richard Palacios": {
+    "id": 5023,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Matt Carpenter": {
+    "id": 5022,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Luis Gonzalez": {
+    "id": 5021,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Harold Castro": {
+    "id": 5020,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Jose Azocar": {
+    "id": 5019,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Luke Voit": {
+    "id": 5018,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Johan Camargo": {
+    "id": 5017,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "DJ LeMahieu": {
+    "id": 5016,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Jorge Polanco": {
+    "id": 5015,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Bradley Zimmer": {
+    "id": 5013,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Brian Serven": {
+    "id": 5012,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Orlando Arcia": {
+    "id": 5010,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Santiago Espinal": {
+    "id": 5009,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "J.T. Realmuto": {
+    "id": 5008,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Matt Duffy": {
+    "id": 5007,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Brad Miller": {
+    "id": 5006,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Nathaniel Lowe": {
+    "id": 5005,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Ramon Laureano": {
+    "id": 5004,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Edmundo Sosa": {
+    "id": 5003,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Luke Maile": {
+    "id": 5002,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Oscar Mercado": {
+    "id": 5001,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Guillermo Heredia": {
+    "id": 5000,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Travis d'Arnaud": {
+    "id": 4999,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Emmanuel Rivera": {
+    "id": 4997,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Albert Pujols": {
+    "id": 4996,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Jake McCarthy": {
+    "id": 4995,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Josh Rojas": {
+    "id": 4994,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Jose Trevino": {
+    "id": 4993,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Dazmon Cameron": {
+    "id": 4992,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Kyle Garlick": {
+    "id": 4991,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Whit Merrifield": {
+    "id": 4989,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Hunter Dozier": {
+    "id": 4988,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Ryan O'Hearn": {
+    "id": 4987,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Derek Hill": {
+    "id": 4986,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Taylor Walls": {
+    "id": 4985,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Mike Zunino": {
+    "id": 4984,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Yonathan Daza": {
+    "id": 4983,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Danny Jansen": {
+    "id": 4981,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Vladimir Guerrero Jr.": {
+    "id": 4980,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Alejandro Kirk": {
+    "id": 4979,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Raimel Tapia": {
+    "id": 4977,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Teoscar Hernandez": {
+    "id": 4976,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Bo Bichette": {
+    "id": 4975,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "George Springer": {
+    "id": 4974,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Kevin Plawecki": {
+    "id": 4971,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Christian Arroyo": {
+    "id": 4970,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Robert Dalbec": {
+    "id": 4969,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Joey Gallo": {
+    "id": 4968,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Manuel Margot": {
+    "id": 4967,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Willson Contreras": {
+    "id": 4966,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Jonathan Villar": {
+    "id": 4965,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Cody Bellinger": {
+    "id": 4964,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Kyle Farmer": {
+    "id": 4963,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Harrison Bader": {
+    "id": 4962,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Juan Yepez": {
+    "id": 4961,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Nolan Arenado": {
+    "id": 4960,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Brendan Donovan": {
+    "id": 4959,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Andrew Knizner": {
+    "id": 4958,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Tommy Edman": {
+    "id": 4957,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Paul Goldschmidt": {
+    "id": 4956,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "P.J. Higgins": {
+    "id": 4955,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Sam Huff": {
+    "id": 4952,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Kyle Higashioka": {
+    "id": 4951,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Miguel Andujar": {
+    "id": 4950,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Jason Castro": {
+    "id": 4949,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Jose Siri": {
+    "id": 4947,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Mauricio Dubon": {
+    "id": 4945,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Ernie Clement": {
+    "id": 4944,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Charlie Culberson": {
+    "id": 4942,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Elijah White": {
+    "id": 4941,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Steven Kwan": {
+    "id": 4940,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Andres Gimenez": {
+    "id": 4939,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Travis Demeritte": {
+    "id": 4938,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Jake Burger": {
+    "id": 4937,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Reese McGuire": {
+    "id": 4935,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Miguel Rojas": {
+    "id": 4933,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Jacob Stallings": {
+    "id": 4932,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Odubel Herrera": {
+    "id": 4931,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Christopher Morel": {
+    "id": 4929,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Aristides Aquino": {
+    "id": 4928,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Aramis Garcia": {
+    "id": 4927,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Matt Reynolds": {
+    "id": 4926,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Jed Lowrie": {
+    "id": 4924,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Vidal Brujan": {
+    "id": 4923,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Yandy Diaz": {
+    "id": 4921,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Francisco Mejia": {
+    "id": 4920,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Christian Bethancourt": {
+    "id": 4919,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Evan Longoria": {
+    "id": 4918,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Patrick Mazeika": {
+    "id": 4916,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Austin Barnes": {
+    "id": 4915,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Edwin Rios": {
+    "id": 4914,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Hanser Alberto": {
+    "id": 4913,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Luis Torrens": {
+    "id": 4912,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Riley Adams": {
+    "id": 4911,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Victor Robles": {
+    "id": 4910,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Alcides Escobar": {
+    "id": 4909,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Taylor Trammell": {
+    "id": 4908,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Kyle Lewis": {
+    "id": 4907,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Tyrone Taylor": {
+    "id": 4906,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Darin Ruf": {
+    "id": 4904,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Brandon Crawford": {
+    "id": 4903,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  },
+  "Joey Bart": {
+    "id": 4900,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Tyler Heineman": {
+    "id": 4899,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Michael Chavis": {
+    "id": 4898,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Randy Arozarena": {
+    "id": 4897,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Kevin Kiermaier": {
+    "id": 4896,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Harold Ramirez": {
+    "id": 4894,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Brett Phillips": {
+    "id": 4893,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Erik Gonzalez": {
+    "id": 4892,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Ji-Man Choi": {
+    "id": 4891,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Avisail Garcia": {
+    "id": 4890,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Wander Franco": {
+    "id": 4889,
+    "team": "Tampa Bay Rays",
+    "source": "Betradar"
+  },
+  "Jesus Aguilar": {
+    "id": 4888,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Brian Anderson": {
+    "id": 4887,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Garrett Cooper": {
+    "id": 4886,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "Jesus Sanchez": {
+    "id": 4884,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Isaac Paredes": {
+    "id": 4883,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Ronald Acuna": {
+    "id": 4882,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Luis Arraez": {
+    "id": 4881,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Nick Gordon": {
+    "id": 4880,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Bryson Stott": {
+    "id": 4879,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Garrett Stubbs": {
+    "id": 4878,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Cal Mitchell": {
+    "id": 4877,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Austin Riley": {
+    "id": 4876,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Rhys Hoskins": {
+    "id": 4875,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jean Segura": {
+    "id": 4874,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Nick Castellanos": {
+    "id": 4873,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Dansby Swanson": {
+    "id": 4872,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "William Contreras": {
+    "id": 4871,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Adam Duvall": {
+    "id": 4869,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Ozzie Albies": {
+    "id": 4868,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Matt Olson": {
+    "id": 4867,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Marcell Ozuna": {
+    "id": 4866,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Bryce Harper": {
+    "id": 4865,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Kyle Schwarber": {
+    "id": 4864,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Alec Bohm": {
+    "id": 4863,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Josh Harrison": {
+    "id": 4862,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Estevan Florial": {
+    "id": 4861,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Josh VanMeter": {
+    "id": 4860,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Jack Suwinski": {
+    "id": 4859,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Tyler Wade": {
+    "id": 4858,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Max Kepler": {
+    "id": 4857,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "J.P. Crawford": {
+    "id": 4856,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Sheldon Neuse": {
+    "id": 4855,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Lorenzo Cain": {
+    "id": 4854,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Yoshitomo Tsutsugo": {
+    "id": 4853,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Eduardo Escobar": {
+    "id": 4852,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Brandon Nimmo": {
+    "id": 4851,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Francisco Lindor": {
+    "id": 4850,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Jeff McNeil": {
+    "id": 4849,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Dominic Smith": {
+    "id": 4848,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Tomas Nido": {
+    "id": 4847,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Mark Canha": {
+    "id": 4846,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Starling Marte": {
+    "id": 4845,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Adley Rutschman": {
+    "id": 4843,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Trey Mancini": {
+    "id": 4842,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Anthony Santander": {
+    "id": 4841,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "Austin Hays": {
+    "id": 4840,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Jorge Mateo": {
+    "id": 4839,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Aaron Judge": {
+    "id": 4838,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Ramon Urias": {
+    "id": 4837,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Cedric Mullins": {
+    "id": 4836,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Gleyber Torres": {
+    "id": 4835,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Anthony Rizzo": {
+    "id": 4834,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Isiah Kiner-Falefa": {
+    "id": 4833,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Aaron Hicks": {
+    "id": 4832,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Elvis Andrus": {
+    "id": 4830,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Marcus Semien": {
+    "id": 4829,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Corey Seager": {
+    "id": 4827,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Jared Walsh": {
+    "id": 4826,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Jonah Heim": {
+    "id": 4825,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Kole Calhoun": {
+    "id": 4824,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Adolis Garcia": {
+    "id": 4823,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Mitchell Garver": {
+    "id": 4822,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Brandon Marsh": {
+    "id": 4821,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Andy Ibanez": {
+    "id": 4820,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Andrew Velazquez": {
+    "id": 4818,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Shohei Ohtani": {
+    "id": 4816,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Mike Trout": {
+    "id": 4815,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Julio Rodriguez": {
+    "id": 4813,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Sean Murphy": {
+    "id": 4812,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Chad Pinder": {
+    "id": 4811,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Jesse Winker": {
+    "id": 4809,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Cal Raleigh": {
+    "id": 4808,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Adam Frazier": {
+    "id": 4807,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Ty France": {
+    "id": 4806,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Eugenio Suarez": {
+    "id": 4805,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Cristian Pache": {
+    "id": 4803,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Luis Barrera": {
+    "id": 4801,
+    "team": "Athletics",
+    "source": "Betradar"
+  },
+  "Josh Naylor": {
+    "id": 4799,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Austin Hedges": {
+    "id": 4798,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Myles Straw": {
+    "id": 4796,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Amed Rosario": {
+    "id": 4795,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Owen Miller": {
+    "id": 4794,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Franmil Reyes": {
+    "id": 4792,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Jose Altuve": {
+    "id": 4790,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Yordan Alvarez": {
+    "id": 4789,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Alex Bregman": {
+    "id": 4788,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Michael Brantley": {
+    "id": 4787,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Kyle Tucker": {
+    "id": 4786,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Jeremy Pena": {
+    "id": 4785,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Chas McCormick": {
+    "id": 4784,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Franchy Cordero": {
+    "id": 4783,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Trevor Story": {
+    "id": 4782,
+    "team": "Boston Red Sox",
+    "source": "Betradar"
+  },
+  "J.D. Martinez": {
+    "id": 4781,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Alex Verdugo": {
+    "id": 4780,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Jose Abreu": {
+    "id": 4779,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Rafael Devers": {
+    "id": 4778,
+    "team": "San Francisco Giants",
+    "source": "Betradar"
+  },
+  "Tim Anderson": {
+    "id": 4777,
+    "team": "Miami Marlins",
+    "source": "Betradar"
+  },
+  "Xander Bogaerts": {
+    "id": 4776,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Leury Garcia": {
+    "id": 4775,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Christian Vazquez": {
+    "id": 4774,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Yoan Moncada": {
+    "id": 4773,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Yasmani Grandal": {
+    "id": 4772,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Adam Engel": {
+    "id": 4771,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Christian Yelich": {
+    "id": 4769,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Jake Cronenworth": {
+    "id": 4768,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Jace Peterson": {
+    "id": 4767,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Andrew McCutchen": {
+    "id": 4766,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Luis Urias": {
+    "id": 4765,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Wil Myers": {
+    "id": 4764,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Omar Narvaez": {
+    "id": 4763,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Kolten Wong": {
+    "id": 4762,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Austin Nola": {
+    "id": 4761,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Rowdy Tellez": {
+    "id": 4760,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Eric Hosmer": {
+    "id": 4759,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Jurickson Profar": {
+    "id": 4758,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Manny Machado": {
+    "id": 4757,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Mookie Betts": {
+    "id": 4756,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Yadiel Hernandez": {
+    "id": 4755,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Juan Soto": {
+    "id": 4754,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Chris Taylor": {
+    "id": 4753,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Lane Thomas": {
+    "id": 4752,
+    "team": "Cleveland Guardians",
+    "source": "Betradar"
+  },
+  "Justin Turner": {
+    "id": 4751,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Max Muncy": {
+    "id": 4750,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Freddie Freeman": {
+    "id": 4749,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Trea Turner": {
+    "id": 4748,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Josh Bell": {
+    "id": 4747,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Gavin Lux": {
+    "id": 4746,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Cesar Hernandez": {
+    "id": 4745,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Will Smith": {
+    "id": 4744,
+    "team": "Los Angeles Dodgers",
+    "source": "Betradar"
+  },
+  "Keibert Ruiz": {
+    "id": 4743,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Maikel Franco": {
+    "id": 4742,
+    "team": "Washington Nationals",
+    "source": "Betradar"
+  },
+  "Nelson Cruz": {
+    "id": 4741,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Pete Alonso": {
+    "id": 4740,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Michael Perez": {
+    "id": 4739,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Rodolfo Castro": {
+    "id": 4738,
+    "team": "Philadelphia Phillies",
+    "source": "Betradar"
+  },
+  "Bryan Reynolds": {
+    "id": 4737,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Ke'Bryan Hayes": {
+    "id": 4736,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Ben Gamel": {
+    "id": 4735,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Tucker Barnhart": {
+    "id": 4733,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Robbie Grossman": {
+    "id": 4732,
+    "team": "Texas Rangers",
+    "source": "Betradar"
+  },
+  "Jeimer Candelario": {
+    "id": 4731,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Javier Baez": {
+    "id": 4730,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Jonathan Schoop": {
+    "id": 4729,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Gary Sanchez": {
+    "id": 4728,
+    "team": "Milwaukee Brewers",
+    "source": "Betradar"
+  },
+  "Miguel Cabrera": {
+    "id": 4727,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Willi Castro": {
+    "id": 4726,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Ryan Jeffers": {
+    "id": 4725,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Byron Buxton": {
+    "id": 4724,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Carlos Correa": {
+    "id": 4723,
+    "team": "Houston Astros",
+    "source": "Betradar"
+  },
+  "Spencer Torkelson": {
+    "id": 4722,
+    "team": "Detroit Tigers",
+    "source": "Betradar"
+  },
+  "Gilberto Celestino": {
+    "id": 4721,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Jose Miranda": {
+    "id": 4720,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Gio Urshela": {
+    "id": 4719,
+    "team": "Atlanta Braves",
+    "source": "Betradar"
+  },
+  "Ian Happ": {
+    "id": 4717,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Seiya Suzuki": {
+    "id": 4716,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Alfonso Rivas": {
+    "id": 4715,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "Andrelton Simmons": {
+    "id": 4714,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Patrick Wisdom": {
+    "id": 4713,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Frank Schwindel": {
+    "id": 4712,
+    "team": "Chicago Cubs",
+    "source": "Betradar"
+  },
+  "Colin Moran": {
+    "id": 4711,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Joey Votto": {
+    "id": 4710,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Rafael Ortega": {
+    "id": 4709,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Tyler Naquin": {
+    "id": 4708,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Tyler Stephenson": {
+    "id": 4707,
+    "team": "Cincinnati Reds",
+    "source": "Betradar"
+  },
+  "Nick Senzel": {
+    "id": 4705,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Mike Moustakas": {
+    "id": 4703,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Jose Iglesias": {
+    "id": 4702,
+    "team": "New York Mets",
+    "source": "Betradar"
+  },
+  "Charlie Blackmon": {
+    "id": 4701,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Randal Grichuk": {
+    "id": 4700,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Elias Diaz": {
+    "id": 4699,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Brendan Rodgers": {
+    "id": 4698,
+    "team": "Colorado Rockies",
+    "source": "Betradar"
+  },
+  "Ryan McMahon": {
+    "id": 4697,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Connor Joe": {
+    "id": 4696,
+    "team": "Pittsburgh Pirates",
+    "source": "Betradar"
+  },
+  "C.J. Cron": {
+    "id": 4695,
+    "team": "Los Angeles Angels",
+    "source": "Betradar"
+  },
+  "Tommy La Stella": {
+    "id": 3277,
+    "team": "Seattle Mariners",
+    "source": "Betradar"
+  },
+  "Joc Pederson": {
+    "id": 3268,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Ketel Marte": {
+    "id": 2772,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Bobby Witt Jr.": {
+    "id": 2771,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Pavin Smith": {
+    "id": 2770,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Christian Walker": {
+    "id": 2769,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Daulton Varsho": {
+    "id": 2766,
+    "team": "Toronto Blue Jays",
+    "source": "Betradar"
+  },
+  "David Peralta": {
+    "id": 2765,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Geraldo Perdomo": {
+    "id": 2764,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Alek Thomas": {
+    "id": 2763,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Kyle Isbel": {
+    "id": 2762,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "MJ Melendez": {
+    "id": 2761,
+    "team": "Kansas City Royals",
+    "source": "Betradar"
+  },
+  "Carlos Santana": {
+    "id": 2760,
+    "team": "Minnesota Twins",
+    "source": "Betradar"
+  },
+  "Rougned Odor": {
+    "id": 1914,
+    "team": "San Diego Padres",
+    "source": "Betradar"
+  },
+  "Ryan Mountcastle": {
+    "id": 1890,
+    "team": "Baltimore Orioles",
+    "source": "Betradar"
+  },
+  "Marwin Gonzalez": {
+    "id": 1776,
+    "team": "New York Yankees",
+    "source": "Betradar"
+  },
+  "Grayson Greiner": {
+    "id": 1750,
+    "team": "Arizona Diamondbacks",
+    "source": "Betradar"
+  },
+  "Luis Robert Jr.": {
+    "id": 1565,
+    "team": "Chicago White Sox",
+    "source": "Betradar"
+  },
+  "Lourdes Gurriel Jr.": {
+    "id": 1438,
+    "team": "St. Louis Cardinals",
+    "source": "Betradar"
+  }
+}
