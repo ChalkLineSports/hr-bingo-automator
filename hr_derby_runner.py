@@ -258,17 +258,54 @@ def result_yesterday(yesterday_ct):
 
 
 # ── Thin-slate look-ahead ──────────────────────────────────────────────────────
+def suggest_cutoff(fixtures, target_ct_date):
+    """
+    Given all fixtures for a date, find the earliest CT hour cutoff that
+    yields >= 5 games. Returns (cutoff_hour, game_count) or None if even
+    all-day games don't reach 5.
+    """
+    for cutoff in (13, 12, 11, 10, 0):
+        games = [
+            f for f in fixtures
+            if (datetime.fromisoformat(f["start_date"].replace("Z", "+00:00")) + CT_OFFSET).date() == target_ct_date
+            and (datetime.fromisoformat(f["start_date"].replace("Z", "+00:00")) + CT_OFFSET).hour >= cutoff
+        ]
+        if len(games) >= 5:
+            label = f"{cutoff}:00 PM CT" if cutoff >= 12 else f"{cutoff}:00 AM CT"
+            if cutoff == 13:
+                label = "1:00 PM CT"
+            elif cutoff == 12:
+                label = "12:00 PM CT"
+            elif cutoff == 11:
+                label = "11:00 AM CT"
+            elif cutoff == 10:
+                label = "10:00 AM CT"
+            elif cutoff == 0:
+                label = "all day"
+            return label, len(games)
+    return None
+
+
 def check_thin_slates(today_ct):
-    """Alert if any of days +2 through +5 has fewer than 5 evening games."""
+    """Alert if any of days +2 through +5 has fewer than 5 evening games,
+    and suggest an earlier start time that would reach 5+ games."""
     thin = []
     for delta in range(2, 6):
         check_date = today_ct + timedelta(days=delta)
         try:
             raw = get_fixtures(check_date.isoformat())
-            evening = filter_evening([normalize_fixture(f) for f in raw], check_date)
+            fixtures = [normalize_fixture(f) for f in raw]
+            evening = filter_evening(fixtures, check_date)
             if len(evening) < 5:
                 word = "game" if len(evening) == 1 else "games"
-                thin.append(f"• {check_date.strftime('%a %b %-d')}: only {len(evening)} evening {word} — HR Derby may not run")
+                line = f"• {check_date.strftime('%a %b %-d')}: only {len(evening)} evening {word}"
+                suggestion = suggest_cutoff(fixtures, check_date)
+                if suggestion:
+                    cutoff_label, count = suggestion
+                    line += f" — move start time to *{cutoff_label}* for {count} games"
+                else:
+                    line += " — not enough games even all day, consider skipping"
+                thin.append(line)
         except Exception:
             pass
     if thin:
