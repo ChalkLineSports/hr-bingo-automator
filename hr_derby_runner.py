@@ -258,11 +258,14 @@ def result_yesterday(yesterday_ct):
 
 
 # ── Thin-slate look-ahead ──────────────────────────────────────────────────────
+_CUTOFF_LABELS = {13: "1:00 PM CT", 12: "12:00 PM CT", 11: "11:00 AM CT", 10: "10:00 AM CT", 0: "all day"}
+
+
 def suggest_cutoff(fixtures, target_ct_date):
     """
     Given all fixtures for a date, find the earliest CT hour cutoff that
-    yields >= 5 games. Returns (cutoff_hour, game_count) or None if even
-    all-day games don't reach 5.
+    yields >= 5 games. Returns (label, games_list) or None if even all-day
+    games don't reach 5.
     """
     for cutoff in (13, 12, 11, 10, 0):
         games = [
@@ -271,18 +274,7 @@ def suggest_cutoff(fixtures, target_ct_date):
             and (datetime.fromisoformat(f["start_date"].replace("Z", "+00:00")) + CT_OFFSET).hour >= cutoff
         ]
         if len(games) >= 5:
-            label = f"{cutoff}:00 PM CT" if cutoff >= 12 else f"{cutoff}:00 AM CT"
-            if cutoff == 13:
-                label = "1:00 PM CT"
-            elif cutoff == 12:
-                label = "12:00 PM CT"
-            elif cutoff == 11:
-                label = "11:00 AM CT"
-            elif cutoff == 10:
-                label = "10:00 AM CT"
-            elif cutoff == 0:
-                label = "all day"
-            return label, len(games)
+            return _CUTOFF_LABELS[cutoff], games
     return None
 
 
@@ -301,8 +293,8 @@ def check_thin_slates(today_ct):
                 line = f"• {check_date.strftime('%a %b %-d')}: only {len(evening)} evening {word}"
                 suggestion = suggest_cutoff(fixtures, check_date)
                 if suggestion:
-                    cutoff_label, count = suggestion
-                    line += f" — move start time to *{cutoff_label}* for {count} games"
+                    cutoff_label, games = suggestion
+                    line += f" — move start time to *{cutoff_label}* for {len(games)} games"
                 else:
                     line += " — not enough games even all day, consider skipping"
                 thin.append(line)
@@ -342,9 +334,13 @@ def run_job(trigger_ts):
             all_fixtures.append(normalize_fixture(f))
 
     evening_fixtures = filter_evening(all_fixtures, tomorrow_ct)
-    fallback = len(evening_fixtures) < 5
-    if fallback:
-        evening_fixtures = all_fixtures
+    cutoff_label = None
+    if len(evening_fixtures) < 5:
+        suggestion = suggest_cutoff(all_fixtures, tomorrow_ct)
+        if suggestion:
+            cutoff_label, evening_fixtures = suggestion
+        else:
+            evening_fixtures = all_fixtures  # last resort: everything
 
     if not evening_fixtures:
         slack_post(f":warning: No MLB games found for {tomorrow_ct.isoformat()} — skipping HR Derby.")
@@ -401,10 +397,10 @@ def run_job(trigger_ts):
         raise RuntimeError(f"No __RESULT__ in generator output:\n{stdout[-500:]}")
 
     # 5h — post to Slack
-    fallback_note = (
-        f"\n_Fallback: fewer than 5 evening games on {tomorrow_ct.isoformat()} CT — using all day's games._"
-        if fallback else ""
-    )
+    if cutoff_label:
+        fallback_note = f"\n_Thin slate: using games from *{cutoff_label}* onward ({len(evening_fixtures)} games)._"
+    else:
+        fallback_note = ""
     slack_post(result_data["check_it_message"] + fallback_note)
     slack_post(result_data["slack_message"])
 
