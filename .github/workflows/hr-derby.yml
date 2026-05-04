@@ -2,8 +2,8 @@ name: HR Derby Slack Trigger
 
 on:
   schedule:
-    # Runs every 5 minutes — checks Slack for !run hr-derby and fires if found
-    - cron: '*/5 * * * *'
+    # Runs every hour — checks Slack for !run hr-derby and fires if found
+    - cron: '0 * * * *'
     # 9 AM CT (14:00 UTC) on Sundays and Wednesdays — post yesterday's results
     - cron: '0 14 * * 0,3'
   workflow_dispatch:

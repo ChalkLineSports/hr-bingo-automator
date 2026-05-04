@@ -586,7 +586,7 @@ class TestResultsTrigger(unittest.TestCase):
 
     @patch("hr_derby_runner.slack_get")
     def test_find_results_trigger_ignores_old_messages(self, mock_get):
-        old_ts = str(time.time() - 700)  # 11+ minutes ago
+        old_ts = str(time.time() - 4200)  # 70 minutes ago, outside 65-min window
         mock_get.return_value = {
             "messages": [{"ts": old_ts, "text": "!results"}]
         }

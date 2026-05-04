@@ -94,7 +94,7 @@ def slack_post(text, thread_ts=None):
 # ── Trigger detection ──────────────────────────────────────────────────────────
 def find_trigger():
     """Return the oldest !run hr-derby message posted in the last 10 min, or None."""
-    cutoff = time.time() - 600
+    cutoff = time.time() - 3900  # 65 min lookback for hourly cron
     data = slack_get("conversations.history", {"channel": CHANNEL_ID, "limit": 20})
     for msg in reversed(data.get("messages", [])):  # oldest first
         if float(msg["ts"]) >= cutoff and "!run hr-derby" in msg.get("text", "").lower():
@@ -110,7 +110,7 @@ def find_results_trigger():
         !results 2026-05-02   -> results for a specific date (YYYY-MM-DD)
     """
     import re
-    cutoff = time.time() - 600
+    cutoff = time.time() - 3900  # 65 min lookback for hourly cron
     data = slack_get("conversations.history", {"channel": CHANNEL_ID, "limit": 20})
     for msg in reversed(data.get("messages", [])):  # oldest first
         text = msg.get("text", "").strip()
