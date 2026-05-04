@@ -7,6 +7,7 @@ Polls Slack for !run hr-derby trigger, then orchestrates the full job:
   - Builds a tier-based player pool (live prop odds blocked server-side)
   - Runs hr_derby_generator.py and posts results to Slack
 """
+import argparse
 import csv
 import json
 import os
@@ -19,13 +20,16 @@ from pathlib import Path
 import requests
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-SLACK_TOKEN = os.environ["SLACK_BOT_TOKEN"]
-OPTICODDS_KEY = os.environ["OPTICODDS_API_KEY"]
+SLACK_TOKEN = os.environ.get("SLACK_BOT_TOKEN", "")
+OPTICODDS_KEY = os.environ.get("OPTICODDS_API_KEY", "")
 CHANNEL_ID = "C0APGR57MLJ"
 CT_OFFSET = timedelta(hours=-5)  # CDT April–October
 SCRIPT_DIR = Path(__file__).parent
 GENERATOR_SCRIPT = SCRIPT_DIR / "hr_derby_generator.py"
 CONTESTANT_MAP = SCRIPT_DIR / "mlb_contestant_map.json"
+
+# ── Global flags ────────────────────────────────────────────────────────────────
+DRY_RUN = False
 
 # ── Tier lists (keep in sync with hr_derby_generator.py POWER_TIERS) ──────────
 ELITE_PLAYERS = {
@@ -65,6 +69,12 @@ def slack_get(endpoint, params):
 
 
 def slack_post(text, thread_ts=None):
+    if DRY_RUN:
+        prefix = "[DRY-RUN] "
+        if thread_ts:
+            prefix += f"(thread {thread_ts}) "
+        print(f"{prefix}{text}")
+        return {"ok": True, "ts": "0000000000.000000"}
     payload = {"channel": CHANNEL_ID, "text": text}
     if thread_ts:
         payload["thread_ts"] = thread_ts
@@ -419,7 +429,59 @@ def run_job(trigger_ts):
         print(f"Warning: thin-slate check failed: {e}", file=sys.stderr)
 
 
-def main():
+def run_results_only():
+    """Run result_yesterday() standalone and exit."""
+    now_utc = datetime.now(timezone.utc)
+    now_ct = now_utc + CT_OFFSET
+    yesterday_ct = (now_ct - timedelta(days=1)).date()
+    print(f"Checking results for {yesterday_ct.strftime('%m-%d-%Y')}...")
+
+    mm_dd_yyyy = yesterday_ct.strftime("%m-%d-%Y")
+    csv_path = SCRIPT_DIR / f"HR Derby MLB {mm_dd_yyyy}.csv"
+    if not csv_path.exists():
+        msg = f":baseball: No HR Derby CSV found for {yesterday_ct.strftime('%a, %b %-d')} — no derby was running."
+        slack_post(msg)
+        print(f"No CSV found at {csv_path}")
+        return
+
+    try:
+        result_yesterday(yesterday_ct)
+        print("Results posted successfully.")
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
+        print(f"Error posting results: {e}", file=sys.stderr)
+        print(tb, file=sys.stderr)
+        sys.exit(1)
+
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(description="HR Derby Runner")
+    parser.add_argument(
+        "--results-only",
+        action="store_true",
+        help="Just post yesterday's results and exit (no Slack trigger needed)",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print to stdout instead of posting to Slack",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv=None):
+    global DRY_RUN
+    args = parse_args(argv)
+
+    if args.dry_run:
+        DRY_RUN = True
+
+    if args.results_only:
+        run_results_only()
+        return
+
+    # Default behavior: poll Slack for trigger
     trigger = find_trigger()
     if not trigger:
         sys.exit(0)
