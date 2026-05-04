@@ -507,3 +507,44 @@ class TestResultsOnlyDryRunIntegration(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestDateFlag(unittest.TestCase):
+    """Tests for the --date argument."""
+
+    def test_parse_date_arg(self):
+        args = runner.parse_args(["--results-only", "--date", "2026-05-02"])
+        self.assertTrue(args.results_only)
+        self.assertEqual(args.date, "2026-05-02")
+
+    def test_parse_no_date_defaults_none(self):
+        args = runner.parse_args(["--results-only"])
+        self.assertIsNone(args.date)
+
+    @patch("hr_derby_runner.slack_post")
+    def test_results_only_with_specific_date_no_csv(self, mock_post):
+        runner.DRY_RUN = True
+        runner.run_results_only(target_date="2026-01-01")
+        mock_post.assert_called_once()
+        msg = mock_post.call_args[0][0]
+        self.assertIn("Jan 1", msg)
+        self.assertIn("No HR Derby CSV found", msg)
+
+    def test_results_only_invalid_date_format(self):
+        runner.DRY_RUN = True
+        with self.assertRaises(SystemExit):
+            runner.run_results_only(target_date="05-02-2026")
+
+    @patch("hr_derby_runner.result_yesterday")
+    @patch("hr_derby_runner.slack_post")
+    def test_results_only_with_date_and_csv(self, mock_post, mock_result):
+        runner.DRY_RUN = True
+        target = "2026-05-02"
+        csv_path = Path(runner.SCRIPT_DIR) / "HR Derby MLB 05-02-2026.csv"
+        csv_path.write_text("Market Name\nAaron Judge\n")
+        try:
+            runner.run_results_only(target_date=target)
+            from datetime import date as date_cls
+            mock_result.assert_called_once_with(date_cls(2026, 5, 2))
+        finally:
+            csv_path.unlink(missing_ok=True)

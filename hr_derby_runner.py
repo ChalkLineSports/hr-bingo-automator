@@ -429,23 +429,34 @@ def run_job(trigger_ts):
         print(f"Warning: thin-slate check failed: {e}", file=sys.stderr)
 
 
-def run_results_only():
-    """Run result_yesterday() standalone and exit."""
-    now_utc = datetime.now(timezone.utc)
-    now_ct = now_utc + CT_OFFSET
-    yesterday_ct = (now_ct - timedelta(days=1)).date()
-    print(f"Checking results for {yesterday_ct.strftime('%m-%d-%Y')}...")
+def run_results_only(target_date=None):
+    """Run result_yesterday() standalone and exit.
+    
+    Args:
+        target_date: Optional YYYY-MM-DD string. If None, defaults to yesterday CT.
+    """
+    if target_date:
+        try:
+            results_date = datetime.strptime(target_date, "%Y-%m-%d").date()
+        except ValueError:
+            print(f"ERROR: Invalid date format '{target_date}'. Use YYYY-MM-DD.", file=sys.stderr)
+            sys.exit(1)
+    else:
+        now_utc = datetime.now(timezone.utc)
+        now_ct = now_utc + CT_OFFSET
+        results_date = (now_ct - timedelta(days=1)).date()
+    print(f"Checking results for {results_date.strftime('%m-%d-%Y')}...")
 
-    mm_dd_yyyy = yesterday_ct.strftime("%m-%d-%Y")
+    mm_dd_yyyy = results_date.strftime("%m-%d-%Y")
     csv_path = SCRIPT_DIR / f"HR Derby MLB {mm_dd_yyyy}.csv"
     if not csv_path.exists():
-        msg = f":baseball: No HR Derby CSV found for {yesterday_ct.strftime('%a, %b %-d')} — no derby was running."
+        msg = f":baseball: No HR Derby CSV found for {results_date.strftime('%a, %b %-d')} — no derby was running."
         slack_post(msg)
         print(f"No CSV found at {csv_path}")
         return
 
     try:
-        result_yesterday(yesterday_ct)
+        result_yesterday(results_date)
         print("Results posted successfully.")
     except Exception as e:
         import traceback
@@ -463,6 +474,11 @@ def parse_args(argv=None):
         help="Just post yesterday's results and exit (no Slack trigger needed)",
     )
     parser.add_argument(
+        "--date",
+        default=None,
+        help="Date to run results for (YYYY-MM-DD). Defaults to yesterday. Use with --results-only.",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Print to stdout instead of posting to Slack",
@@ -478,7 +494,7 @@ def main(argv=None):
         DRY_RUN = True
 
     if args.results_only:
-        run_results_only()
+        run_results_only(target_date=args.date)
         return
 
     # Default behavior: poll Slack for trigger
