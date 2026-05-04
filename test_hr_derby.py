@@ -10,6 +10,7 @@ import csv
 import io
 import os
 import sys
+import time
 import tempfile
 import unittest
 from datetime import date, datetime, timedelta, timezone
@@ -548,3 +549,64 @@ class TestDateFlag(unittest.TestCase):
             mock_result.assert_called_once_with(date_cls(2026, 5, 2))
         finally:
             csv_path.unlink(missing_ok=True)
+
+
+class TestResultsTrigger(unittest.TestCase):
+    """Tests for the !results Slack trigger."""
+
+    @patch("hr_derby_runner.slack_get")
+    def test_find_results_trigger_no_date(self, mock_get):
+        now = time.time()
+        mock_get.return_value = {
+            "messages": [{"ts": str(now - 60), "text": "!results"}]
+        }
+        result = runner.find_results_trigger()
+        self.assertIsNotNone(result)
+        self.assertIsNone(result["_results_date"])
+
+    @patch("hr_derby_runner.slack_get")
+    def test_find_results_trigger_with_date(self, mock_get):
+        now = time.time()
+        mock_get.return_value = {
+            "messages": [{"ts": str(now - 60), "text": "!results 2026-05-02"}]
+        }
+        result = runner.find_results_trigger()
+        self.assertIsNotNone(result)
+        self.assertEqual(result["_results_date"], "2026-05-02")
+
+    @patch("hr_derby_runner.slack_get")
+    def test_find_results_trigger_case_insensitive(self, mock_get):
+        now = time.time()
+        mock_get.return_value = {
+            "messages": [{"ts": str(now - 60), "text": "!Results 2026-05-02"}]
+        }
+        result = runner.find_results_trigger()
+        self.assertIsNotNone(result)
+        self.assertEqual(result["_results_date"], "2026-05-02")
+
+    @patch("hr_derby_runner.slack_get")
+    def test_find_results_trigger_ignores_old_messages(self, mock_get):
+        old_ts = str(time.time() - 700)  # 11+ minutes ago
+        mock_get.return_value = {
+            "messages": [{"ts": old_ts, "text": "!results"}]
+        }
+        result = runner.find_results_trigger()
+        self.assertIsNone(result)
+
+    @patch("hr_derby_runner.slack_get")
+    def test_find_results_trigger_ignores_partial_match(self, mock_get):
+        now = time.time()
+        mock_get.return_value = {
+            "messages": [{"ts": str(now - 60), "text": "!results are looking good"}]
+        }
+        result = runner.find_results_trigger()
+        self.assertIsNone(result)
+
+    @patch("hr_derby_runner.slack_get")
+    def test_find_results_trigger_no_match(self, mock_get):
+        now = time.time()
+        mock_get.return_value = {
+            "messages": [{"ts": str(now - 60), "text": "hello world"}]
+        }
+        result = runner.find_results_trigger()
+        self.assertIsNone(result)

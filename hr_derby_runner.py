@@ -102,10 +102,33 @@ def find_trigger():
     return None
 
 
+def find_results_trigger():
+    """Return the oldest !results message posted in the last 10 min, or None.
+
+    Supports:
+        !results              -> yesterday's results
+        !results 2026-05-02   -> results for a specific date (YYYY-MM-DD)
+    """
+    import re
+    cutoff = time.time() - 600
+    data = slack_get("conversations.history", {"channel": CHANNEL_ID, "limit": 20})
+    for msg in reversed(data.get("messages", [])):  # oldest first
+        text = msg.get("text", "").strip()
+        if float(msg["ts"]) < cutoff:
+            continue
+        # Match "!results" optionally followed by a date
+        match = re.match(r"!results(?:\s+(\d{4}-\d{2}-\d{2}))?\s*$", text, re.IGNORECASE)
+        if match:
+            msg["_results_date"] = match.group(1)  # None if no date given
+            return msg
+    return None
+
+
 def already_handled(trigger_ts):
     """True if this thread already has a job status reply (idempotency guard)."""
     data = slack_get("conversations.replies", {"channel": CHANNEL_ID, "ts": trigger_ts})
-    sentinels = ("Starting HR Derby", "HR Derby job complete", "HR Derby job failed")
+    sentinels = ("Starting HR Derby", "HR Derby job complete", "HR Derby job failed",
+                 "Posting HR Derby results", "Results posted", "Results failed")
     return any(
         any(s in r.get("text", "") for s in sentinels)
         for r in data.get("messages", [])
@@ -497,7 +520,22 @@ def main(argv=None):
         run_results_only(target_date=args.date)
         return
 
-    # Default behavior: poll Slack for trigger
+    # Check for !results trigger first
+    results_trigger = find_results_trigger()
+    if results_trigger:
+        trigger_ts = results_trigger["ts"]
+        if not already_handled(trigger_ts):
+            slack_post(":hourglass_flowing_sand: Posting HR Derby results…", thread_ts=trigger_ts)
+            try:
+                run_results_only(target_date=results_trigger.get("_results_date"))
+                slack_post(":white_check_mark: Results posted.", thread_ts=trigger_ts)
+            except Exception as e:
+                import traceback
+                tb = traceback.format_exc()
+                slack_post(f":x: Results failed: {e}\n```{tb[-800:]}```", thread_ts=trigger_ts)
+            return
+
+    # Default behavior: poll Slack for !run hr-derby trigger
     trigger = find_trigger()
     if not trigger:
         sys.exit(0)
