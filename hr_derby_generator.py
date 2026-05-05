@@ -20,9 +20,8 @@ from pathlib import Path
 
 CONTESTANT_MAP_PATH = Path("/Users/joekustelski/Downloads/mlb_contestant_map.json")
 OUTPUT_DIR = Path("/Users/joekustelski/Downloads")
-TOP_N_PLAYERS = 25
-BOOK_NAME = "Pick Your Home Run Hitters"
-ODDS_TYPE = "Championship Outright"
+TOP_N_PLAYERS = 32
+BINGO_ODDS = "11.0000"
 MIN_GAMES_WARNING = 5  # Alert the team if fewer than this many evening games are found
 
 # Tier-based estimated odds (American) when sportsbooks haven't posted yet.
@@ -149,8 +148,14 @@ def build_player_rows(
     if not prop_data:
         raise ValueError("No player prop data provided — cannot build rows.")
 
+    PITCHER_POSITIONS = {"SP", "RP", "P", "Pitcher", "Starting Pitcher", "Relief Pitcher"}
+    eligible = [
+        p for p in prop_data
+        if p.get("position", "").strip() not in PITCHER_POSITIONS
+    ]
+
     # Sort by american odds ascending (most likely first)
-    sorted_players = sorted(prop_data, key=lambda p: p["american_odds"])[:top_n]
+    sorted_players = sorted(eligible, key=lambda p: p["american_odds"])[:top_n]
 
     rows = []
     warnings = []
@@ -164,12 +169,10 @@ def build_player_rows(
             warnings.append(f"No contestant ID for: {name}")
 
         rows.append({
-            "Odds Type":  ODDS_TYPE if i == 1 else "",
-            "Book Name":  BOOK_NAME if i == 1 else "",
             "Market Name": name,
             "Contestant": cid,
             "Order":      i,
-            "Odds":       f"{american_to_decimal(american):.4f}",
+            "Odds":       BINGO_ODDS,
             "_estimated":      is_estimated,
             "_team":           player.get("team", ""),
             "_position":       player.get("position", ""),
@@ -181,7 +184,7 @@ def build_player_rows(
 
 def write_csv(rows: list[dict], output_path: Path) -> None:
     """Write player rows to CSV in Chalkline upload format."""
-    fieldnames = ["Odds Type", "Book Name", "Market Name", "Contestant", "Order", "Odds"]
+    fieldnames = ["Market Name", "Contestant", "Order", "Odds"]
     with open(output_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
@@ -383,7 +386,7 @@ def run_unit_tests() -> bool:
     rows, warnings = build_player_rows(mock_props, mock_map, top_n=3)
     assert_eq("top_n=3 returns 3 rows", len(rows), 3)
     assert_eq("row 1 is Judge", rows[0]["Market Name"], "Aaron Judge")
-    assert_eq("row 1 odds", rows[0]["Odds"], "3.5000")
+    assert_eq("row 1 odds", rows[0]["Odds"], "11.0000")
     assert_eq("alias resolved in ID", rows[2]["Contestant"], "5045")
     assert_eq("NULL warning raised", len(warnings) >= 1, True)
 
@@ -397,7 +400,8 @@ def run_unit_tests() -> bool:
         content = f.read()
     assert_eq("CSV contains header", "Market Name" in content, True)
     assert_eq("CSV contains Aaron Judge", "Aaron Judge" in content, True)
-    assert_eq("CSV contains Championship Outright", "Championship Outright" in content, True)
+    assert_eq("CSV contains flat odds", "11.0000" in content, True)
+    assert_eq("CSV does not contain Odds Type column", "Odds Type" not in content, True)
     tmp_path.unlink()
 
     # build_player_rows — empty input raises
