@@ -18,8 +18,8 @@ from pathlib import Path
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-CONTESTANT_MAP_PATH = Path("/Users/joekustelski/Downloads/mlb_contestant_map.json")
-OUTPUT_DIR = Path("/Users/joekustelski/Downloads")
+CONTESTANT_MAP_PATH = Path(__file__).parent / "mlb_contestant_map.json"
+OUTPUT_DIR = Path(__file__).parent
 TOP_N_PLAYERS = 32
 BINGO_ODDS = "11.0000"
 MIN_GAMES_WARNING = 5  # Alert the team if fewer than this many evening games are found

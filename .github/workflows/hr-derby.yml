@@ -1,0 +1,87 @@
+name: HR Derby
+
+on:
+  schedule:
+    # Lineup jobs — CDT (UTC-5). Adjust to UTC-6 Nov–Mar for CST.
+    - cron: '6 17 * * 1'   # Monday    12:06 PM CT → lineup for Tuesday
+    - cron: '6 17 * * 5'   # Friday    12:06 PM CT → lineup for Saturday
+    # Results jobs
+    - cron: '4 12 * * 3'   # Wednesday  7:04 AM CT → results from Tuesday
+    - cron: '6 12 * * 0'   # Sunday     7:06 AM CT → results from Saturday
+    # Break-glass: check Slack every hour for !run hr-derby
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode: lineup, results, or trigger'
+        required: false
+        default: 'trigger'
+      date:
+        description: 'Optional date override YYYY-MM-DD (used with results mode)'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  hr-derby:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine run mode
+        id: mode
+        run: |
+          CRON="${{ github.event.schedule }}"
+          MANUAL="${{ github.event.inputs.mode }}"
+          if [[ "$CRON" == "6 17 * * 1" || "$CRON" == "6 17 * * 5" || "$MANUAL" == "lineup" ]]; then
+            echo "mode=lineup" >> "$GITHUB_OUTPUT"
+          elif [[ "$CRON" == "4 12 * * 3" || "$CRON" == "6 12 * * 0" || "$MANUAL" == "results" ]]; then
+            echo "mode=results" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=trigger" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run lineup generation
+        if: steps.mode.outputs.mode == 'lineup'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          OPTICODDS_API_KEY: ${{ secrets.OPTICODDS_API_KEY }}
+        run: python hr_derby_runner.py --lineup
+
+      - name: Commit generated CSV
+        if: steps.mode.outputs.mode == 'lineup'
+        run: |
+          git config user.name "HR Derby Bot"
+          git config user.email "hr-derby-bot@users.noreply.github.com"
+          git add "HR Derby MLB "*.csv 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "chore: HR Derby CSV $(date -u +%Y-%m-%d)"
+          git push || true
+
+      - name: Post results
+        if: steps.mode.outputs.mode == 'results'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        run: |
+          DATE_ARG="${{ github.event.inputs.date }}"
+          if [[ -n "$DATE_ARG" ]]; then
+            python hr_derby_runner.py --results-only --date "$DATE_ARG"
+          else
+            python hr_derby_runner.py --results-only
+          fi
+
+      - name: Check Slack trigger
+        if: steps.mode.outputs.mode == 'trigger'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          OPTICODDS_API_KEY: ${{ secrets.OPTICODDS_API_KEY }}
+        run: python hr_derby_runner.py
