@@ -19,6 +19,10 @@ on:
       date:
         description: 'Optional date override YYYY-MM-DD (used with results mode)'
         required: false
+      dry_run:
+        description: 'Dry run: build and print to the log, do not post to Slack or commit'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -56,10 +60,13 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           OPTICODDS_API_KEY: ${{ secrets.OPTICODDS_API_KEY }}
-        run: python hr_derby_runner.py --lineup
+        run: |
+          DRY=""
+          if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then DRY="--dry-run"; fi
+          python hr_derby_runner.py --lineup $DRY
 
       - name: Commit generated CSV
-        if: steps.mode.outputs.mode == 'lineup'
+        if: steps.mode.outputs.mode == 'lineup' && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name "HR Derby Bot"
           git config user.email "hr-derby-bot@users.noreply.github.com"
