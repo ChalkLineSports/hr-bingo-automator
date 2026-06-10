@@ -21,40 +21,15 @@ from pathlib import Path
 CONTESTANT_MAP_PATH = Path(__file__).parent / "mlb_contestant_map.json"
 OUTPUT_DIR = Path(__file__).parent
 TOP_N_PLAYERS = 32
+MAX_PER_TEAM = 3          # No single team may supply more than this many candidates
 BINGO_ODDS = "11.0000"
-MIN_GAMES_WARNING = 5  # Alert the team if fewer than this many evening games are found
+MIN_GAMES_WARNING = 5     # Alert the team if fewer than this many evening games are found
 
-# Tier-based estimated odds (American) when sportsbooks haven't posted yet.
-# These represent a reasonable prior based on known power profiles.
-POWER_TIERS = {
-    "elite": {
-        "players": [
-            "Aaron Judge", "Shohei Ohtani", "Giancarlo Stanton", "Pete Alonso",
-            "Kyle Schwarber", "Matt Olson", "Yordan Alvarez", "Vladimir Guerrero Jr.",
-            "Gunnar Henderson", "Bobby Witt Jr.", "Marcell Ozuna", "Freddie Freeman",
-            "Fernando Tatis Jr.", "José Ramírez", "Jose Ramirez",
-        ],
-        "odds": 300,   # +300 implied ~25%
-    },
-    "above_average": {
-        "players": [
-            "Riley Greene", "Junior Caminero", "Ben Rice", "Jonathan Aranda",
-            "Jazz Chisholm", "Jazz Chisholm Jr.", "Brent Rooker", "Nick Kurtz",
-            "Trent Grisham", "Spencer Torkelson", "Elly De La Cruz", "Elly de la Cruz",
-            "Pete Crow-Armstrong", "Michael Busch", "Shea Langeliers",
-            "Eugenio Suarez", "Agustin Ramirez", "Alex Bregman", "Ryan McMahon",
-            "Colt Keith", "Kerry Carpenter", "Byron Buxton", "Jackson Chourio",
-            "Sal Stewart", "Jackson Merrill", "Bryce Harper", "Manny Machado",
-            "Trea Turner", "Paul Goldschmidt", "Nolan Arenado", "Corey Seager",
-            "Adolis Garcia", "Teoscar Hernandez", "William Contreras",
-        ],
-        "odds": 450,   # +450 implied ~18%
-    },
-    "average": {
-        "players": [],  # everyone else
-        "odds": 650,   # +650 implied ~13%
-    },
-}
+# Pitchers are never valid HR Derby candidates. Selection is driven by actual
+# season home-run totals (supplied by the runner from the MLB Stats API), so the
+# old hard-coded power tiers have been removed — they were the root cause of stale
+# names (retired/injured players) and weak hitters appearing on the card.
+PITCHER_POSITIONS = {"SP", "RP", "P", "Pitcher", "Starting Pitcher", "Relief Pitcher"}
 
 # Name aliases for Chalkline contestant map lookup
 NAME_ALIASES = {
@@ -92,17 +67,6 @@ def american_to_decimal(american: int) -> float:
     return round(dec * 2) / 2
 
 
-def estimate_odds(player_name: str) -> tuple[int, bool]:
-    """
-    Return (american_odds, is_estimated) for a player with no live line.
-    Uses power tier lookup; always flags as estimated.
-    """
-    for tier in ("elite", "above_average"):
-        if player_name in POWER_TIERS[tier]["players"]:
-            return POWER_TIERS[tier]["odds"], True
-    return POWER_TIERS["average"]["odds"], True
-
-
 def filter_games_by_cutoff(
     fixtures: list[dict],
     cutoff_hour_ct: int,
@@ -136,33 +100,62 @@ def build_player_rows(
     prop_data: list[dict],
     contestant_map: dict,
     top_n: int = TOP_N_PLAYERS,
+    max_per_team: int = MAX_PER_TEAM,
 ) -> tuple[list[dict], list[str]]:
     """
-    Build sorted player rows from raw prop data.
+    Build the ranked, capped player rows from candidate prop data.
 
-    prop_data: list of dicts with keys: name (str), american_odds (int), is_estimated (bool)
+    prop_data: list of dicts with keys:
+        name (str), hr (int), team (str), position (str),
+        american_odds (int), is_estimated (bool)
+
+    Selection policy (this is the quality guardrail):
+      1. Pitchers are dropped (defense in depth — HR ranking already excludes them).
+      2. Candidates are ranked by season home runs DESC, then odds, then name.
+      3. No more than `max_per_team` players from any single team are taken
+         (prevents the "10 Yankees" problem). This cap is HARD: on a thin slate
+         that can't fill `top_n` under the cap, a shorter card is returned rather
+         than flooding it with one roster. (A short card is the signal to widen
+         the slate; the runner already warns on thin slates.)
+      4. The final list is returned ranked best-first for display.
+
     Returns: (rows, warnings)
-        rows: top_n players sorted by american_odds ascending
+        rows: up to top_n players, each with a Chalkline contestant ID
         warnings: list of warning strings (e.g. NULL contestant IDs)
     """
     if not prop_data:
         raise ValueError("No player prop data provided — cannot build rows.")
 
-    PITCHER_POSITIONS = {"SP", "RP", "P", "Pitcher", "Starting Pitcher", "Relief Pitcher"}
     eligible = [
         p for p in prop_data
-        if p.get("position", "").strip() not in PITCHER_POSITIONS
+        if str(p.get("position", "")).strip() not in PITCHER_POSITIONS
     ]
+    if not eligible:
+        raise ValueError("No eligible non-pitcher players in prop data.")
 
-    # Sort by american odds ascending (most likely first)
-    sorted_players = sorted(eligible, key=lambda p: p["american_odds"])[:top_n]
+    def rank_key(p):
+        return (-int(p.get("hr", 0)), p.get("american_odds", 9999), p.get("name", ""))
+
+    ranked = sorted(eligible, key=rank_key)
+
+    # Greedy pick respecting the per-team cap.
+    selected_idx = []
+    team_counts = {}
+    for i, p in enumerate(ranked):
+        if len(selected_idx) >= top_n:
+            break
+        team = p.get("team", "")
+        if max_per_team and team and team_counts.get(team, 0) >= max_per_team:
+            continue
+        selected_idx.append(i)
+        team_counts[team] = team_counts.get(team, 0) + 1
+
+    selected = sorted((ranked[i] for i in selected_idx), key=rank_key)
 
     rows = []
     warnings = []
-    for i, player in enumerate(sorted_players, start=1):
+    for order, player in enumerate(selected, start=1):
         name = player["name"]
-        american = player["american_odds"]
-        is_estimated = player.get("is_estimated", False)
         cid = get_contestant_id(name, contestant_map)
 
         if cid == "NULL":
@@ -171,12 +164,13 @@ def build_player_rows(
         rows.append({
             "Market Name": name,
             "Contestant": cid,
-            "Order":      i,
+            "Order":      order,
             "Odds":       BINGO_ODDS,
-            "_estimated":      is_estimated,
+            "_estimated":      player.get("is_estimated", False),
             "_team":           player.get("team", ""),
             "_position":       player.get("position", ""),
-            "_american_odds":  american,
+            "_american_odds":  player.get("american_odds", 0),
+            "_hr":             int(player.get("hr", 0)),
         })
 
     return rows, warnings
@@ -228,21 +222,22 @@ def format_check_it_message(
     n_games = len(fixtures)
     game_word = "game" if n_games == 1 else "games"
     lines = [
-        f"Here are the top {len(rows)} HR candidates across all {n_games} {game_word} tomorrow, ranked by likelihood:",
+        f"Here are the top {len(rows)} HR candidates across all {n_games} {game_word} tomorrow, ranked by 2026 home runs:",
         "",
-        "| Rank | Player | Game | Time | American | Implied % |",
-        "|------|--------|------|------|----------|-----------|",
+        "| Rank | Player | 2026 HR | Game | Time | American | Implied % |",
+        "|------|--------|---------|------|------|----------|-----------|",
     ]
 
     for row in rows:
         rank = row["Order"]
         player = row["Market Name"]
+        hr = row.get("_hr", 0)
         american = row.get("_american_odds", 0)
         team = row.get("_team", "")
         game = team_to_game.get(team, "—")
         time_str = team_to_time.get(team, "—")
         odds_str = f"+{american}" if american >= 0 else str(american)
-        lines.append(f"| {rank} | {player} | {game} | {time_str} | {odds_str} | {implied_pct(american)} |")
+        lines.append(f"| {rank} | {player} | {hr} | {game} | {time_str} | {odds_str} | {implied_pct(american)} |")
 
     return "\n".join(lines)
 
@@ -328,16 +323,6 @@ def run_unit_tests() -> bool:
     assert_eq("rounds to nearest .5 +276", american_to_decimal(276), 4.0)
     assert_eq("rounds to nearest .5 +339", american_to_decimal(339), 4.5)
 
-    # estimate_odds
-    print("\n-- estimate_odds --")
-    odds, est = estimate_odds("Aaron Judge")
-    assert_eq("Judge tier odds", odds, 300)
-    assert_eq("Judge is estimated", est, True)
-    odds, est = estimate_odds("Brent Rooker")
-    assert_eq("Rooker tier odds", odds, 450)
-    odds, est = estimate_odds("Unknown Player XYZ")
-    assert_eq("Unknown player falls to average", odds, 650)
-
     # get_contestant_id
     print("\n-- get_contestant_id --")
     mock_map = {
@@ -375,23 +360,63 @@ def run_unit_tests() -> bool:
     filtered_all = filter_games_by_cutoff(fixtures, cutoff_hour_ct=0)
     assert_eq("cutoff=0, no date: keeps all", len(filtered_all), 6)
 
-    # build_player_rows
-    print("\n-- build_player_rows --")
+    # build_player_rows — ranks by HR desc, resolves IDs
+    print("\n-- build_player_rows: HR ranking --")
     mock_props = [
-        {"name": "Aaron Judge",    "american_odds": 267, "is_estimated": False},
-        {"name": "Riley Greene",   "american_odds": 339, "is_estimated": False},
-        {"name": "Jazz Chisholm Jr.", "american_odds": 470, "is_estimated": True},
-        {"name": "Unknown Player", "american_odds": 500, "is_estimated": True},
+        {"name": "Riley Greene",      "hr": 12, "team": "Detroit Tigers",    "position": "RF", "american_odds": 339, "is_estimated": False},
+        {"name": "Aaron Judge",       "hr": 25, "team": "New York Yankees",  "position": "RF", "american_odds": 267, "is_estimated": False},
+        {"name": "Jazz Chisholm Jr.", "hr": 18, "team": "New York Yankees",  "position": "2B", "american_odds": 470, "is_estimated": True},
+        {"name": "Unknown Player",    "hr": 8,  "team": "Detroit Tigers",    "position": "1B", "american_odds": 500, "is_estimated": True},
     ]
     rows, warnings = build_player_rows(mock_props, mock_map, top_n=3)
     assert_eq("top_n=3 returns 3 rows", len(rows), 3)
-    assert_eq("row 1 is Judge", rows[0]["Market Name"], "Aaron Judge")
-    assert_eq("row 1 odds", rows[0]["Odds"], "11.0000")
-    assert_eq("alias resolved in ID", rows[2]["Contestant"], "5045")
-    assert_eq("NULL warning raised", len(warnings) >= 1, True)
+    assert_eq("row 1 is highest HR (Judge)", rows[0]["Market Name"], "Aaron Judge")
+    assert_eq("row 2 is next HR (Chisholm)", rows[1]["Market Name"], "Jazz Chisholm Jr.")
+    assert_eq("row 1 carries HR total", rows[0]["_hr"], 25)
+    assert_eq("row 1 odds flattened", rows[0]["Odds"], "11.0000")
+    assert_eq("alias resolved in ID", rows[1]["Contestant"], "5045")
+    assert_eq("NULL warning raised for unmapped", len(warnings) >= 1, True)
+
+    # build_player_rows — pitchers are always dropped
+    print("\n-- build_player_rows: pitcher exclusion --")
+    pitcher_props = [
+        {"name": "Aaron Judge",   "hr": 25, "team": "New York Yankees", "position": "RF", "american_odds": 267},
+        {"name": "Emmet Sheehan", "hr": 0,  "team": "New York Yankees", "position": "SP", "american_odds": 650},
+        {"name": "Tanner Bibee",  "hr": 0,  "team": "New York Yankees", "position": "P",  "american_odds": 650},
+    ]
+    rows, _ = build_player_rows(pitcher_props, mock_map, top_n=10)
+    names = [r["Market Name"] for r in rows]
+    assert_eq("pitcher SP excluded", "Emmet Sheehan" not in names, True)
+    assert_eq("pitcher P excluded", "Tanner Bibee" not in names, True)
+    assert_eq("only the hitter remains", names, ["Aaron Judge"])
+
+    # build_player_rows — per-team cap prevents one team flooding the card
+    print("\n-- build_player_rows: per-team cap --")
+    flood_props = [
+        {"name": f"Yankee {i}", "hr": 30 - i, "team": "New York Yankees", "position": "RF", "american_odds": 300}
+        for i in range(8)
+    ] + [
+        {"name": f"Met {i}", "hr": 20 - i, "team": "New York Mets", "position": "1B", "american_odds": 400}
+        for i in range(8)
+    ]
+    rows, _ = build_player_rows(flood_props, mock_map, top_n=6, max_per_team=3)
+    yankee_count = sum(1 for r in rows if r["_team"] == "New York Yankees")
+    assert_eq("no more than 3 Yankees", yankee_count, 3)
+    assert_eq("card still filled to top_n", len(rows), 6)
+
+    # build_player_rows — cap is HARD: a thin/concentrated slate yields a shorter
+    # card rather than flooding it past the cap (this was the "10 Yankees" bug).
+    print("\n-- build_player_rows: cap holds on a concentrated slate --")
+    thin_props = [
+        {"name": f"Yankee {i}", "hr": 30 - i, "team": "New York Yankees", "position": "RF", "american_odds": 300}
+        for i in range(5)
+    ]
+    rows, _ = build_player_rows(thin_props, mock_map, top_n=5, max_per_team=3)
+    assert_eq("one team never exceeds the cap", len(rows), 3)
 
     # write_csv / read back
     print("\n-- write_csv --")
+    rows, _ = build_player_rows(mock_props, mock_map, top_n=3)
     import tempfile
     with tempfile.NamedTemporaryFile(suffix=".csv", delete=False, mode="w") as tmp:
         tmp_path = Path(tmp.name)
