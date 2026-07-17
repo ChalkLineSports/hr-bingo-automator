@@ -415,5 +415,75 @@ class TestResultsSharing(unittest.TestCase):
         self.assertIn("Ben Rice", msg.split("LOST")[1])
 
 
+# ── Cross-source team-name aliases (the hidden-Athletics bug) ────────────────────
+
+class TestTeamNameAliases(unittest.TestCase):
+    """StatsAPI says "Athletics"; OpticOdds fixtures say "Oakland Athletics".
+    Before the alias, every Athletics hitter was silently excluded from every card."""
+
+    ATHLETICS_MAP = {"Shea Langeliers": {"id": 5291, "team": "Oakland Athletics"}}
+    ATHLETICS_LEADERS = [
+        {"name": "Shea Langeliers", "hr": 21, "team": "Athletics", "position": "C"},
+    ]
+
+    def test_team_key_maps_oakland_to_athletics(self):
+        self.assertEqual(runner.team_key("Oakland Athletics"), runner.team_key("Athletics"))
+
+    def test_athletics_leader_matches_oakland_slate(self):
+        props, _ = runner.build_props(
+            {"Oakland Athletics"}, set(), self.ATHLETICS_MAP, self.ATHLETICS_LEADERS
+        )
+        self.assertEqual([p["name"] for p in props], ["Shea Langeliers"])
+
+
+# ── Thin-slate fallback: message must show the same slate the pool used ──────────
+
+class TestThinSlateCutoffPropagation(unittest.TestCase):
+    """When the runner widens the slate below 6 PM CT, the generator must receive
+    the widened cutoff — otherwise the Slack message lists only the evening games
+    and raises a false thin-slate alert while the card uses the full slate."""
+
+    @staticmethod
+    def _fixture(fid, iso_utc):
+        return {"id": fid, "start_date": iso_utc, "home": f"H{fid}", "away": f"A{fid}"}
+
+    def _day_fixtures(self):
+        # July 18 CT: eleven afternoon games (13:20-15:10 CT), four evening games.
+        afternoon = [self._fixture(f"aft{i}", "2026-07-18T19:10:00Z") for i in range(11)]
+        evening = [self._fixture(f"eve{i}", "2026-07-19T00:08:00Z") for i in range(4)]
+        return afternoon + evening
+
+    def test_suggest_cutoff_returns_hour_label_and_games(self):
+        result = runner.suggest_cutoff(self._day_fixtures(), date(2026, 7, 18))
+        self.assertIsNotNone(result)
+        cutoff, label, games = result
+        self.assertEqual(cutoff, 13)
+        self.assertEqual(label, "1:00 PM CT")
+        self.assertEqual(len(games), 15)
+
+    def test_generator_displays_full_widened_slate(self):
+        fixtures = self._day_fixtures()
+        cutoff, _, widened = runner.suggest_cutoff(fixtures, date(2026, 7, 18))
+        props = [{"name": "Shea Langeliers", "hr": 21, "team": "Athletics",
+                  "position": "C", "american_odds": 250, "is_estimated": True}]
+        with tempfile.TemporaryDirectory() as tmp:
+            map_path = Path(tmp) / "map.json"
+            map_path.write_text(json.dumps(TestTeamNameAliases.ATHLETICS_MAP))
+            proc = subprocess.run(
+                [sys.executable, str(GENERATOR_PATH),
+                 "--date", "2026-07-18",
+                 "--cutoff-hour", str(cutoff),
+                 "--contestant-map", str(map_path),
+                 "--output", tmp],
+                input=json.dumps({"fixtures": widened, "props": props}),
+                capture_output=True, text=True,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            marker = "__RESULT__"
+            result = json.loads(proc.stdout[proc.stdout.index(marker) + len(marker):].strip())
+        self.assertEqual(result["game_count"], 15)
+        self.assertFalse(result["low_game_count"])
+
+
 if __name__ == "__main__":
     unittest.main()
