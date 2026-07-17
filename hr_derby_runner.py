@@ -60,6 +60,19 @@ def normalize_team(team):
     return normalize_name(team).replace(".", "")
 
 
+# The MLB Stats API and OpticOdds disagree on some franchise names. Selection
+# compares Stats-API leader teams against OpticOdds fixture teams, so without
+# an alias the mismatched club's hitters are silently excluded from every card
+# (this hid all Athletics hitters until July 2026).
+TEAM_NAME_ALIASES = {"oakland athletics": "athletics"}
+
+
+def team_key(team):
+    """Canonical comparison key for a team name across data sources."""
+    k = normalize_team(team)
+    return TEAM_NAME_ALIASES.get(k, k)
+
+
 def build_name_index(contestant_map):
     """Map normalized player name -> (canonical_name, entry) for tolerant lookup."""
     index = {}
@@ -311,7 +324,7 @@ def build_props(teams_in_slate, out_player_names, contestant_map, hr_leaders,
     if name_index is None:
         name_index = build_name_index(contestant_map)
 
-    slate_norm = {normalize_team(t) for t in teams_in_slate}
+    slate_norm = {team_key(t) for t in teams_in_slate}
     out_norm = {normalize_name(n) for n in out_player_names}
 
     props = []
@@ -327,7 +340,7 @@ def build_props(teams_in_slate, out_player_names, contestant_map, hr_leaders,
         hr = entry.get("hr", 0)
         position = entry.get("position", "")
 
-        if normalize_team(team) not in slate_norm:
+        if team_key(team) not in slate_norm:
             continue
         if position in PITCHER_POSITIONS:
             continue
@@ -444,7 +457,7 @@ def suggest_cutoff(fixtures, target_ct_date):
             and (datetime.fromisoformat(f["start_date"].replace("Z", "+00:00")) + CT_OFFSET).hour >= cutoff
         ]
         if len(games) >= 5:
-            return _CUTOFF_LABELS[cutoff], games
+            return cutoff, _CUTOFF_LABELS[cutoff], games
     return None
 
 
@@ -461,7 +474,7 @@ def check_thin_slates(today_ct):
                 line = f"• {check_date.strftime('%a %b %-d')}: only {len(evening)} evening {word}"
                 suggestion = suggest_cutoff(fixtures, check_date)
                 if suggestion:
-                    cutoff_label, games = suggestion
+                    _, cutoff_label, games = suggestion
                     line += f" — move start time to *{cutoff_label}* for {len(games)} games"
                 else:
                     line += " — not enough games even all day, consider skipping"
@@ -501,12 +514,14 @@ def run_job(trigger_ts=None):
 
     evening_fixtures = filter_evening(all_fixtures, tomorrow_ct)
     cutoff_label = None
+    effective_cutoff = 18
     if len(evening_fixtures) < 5:
         suggestion = suggest_cutoff(all_fixtures, tomorrow_ct)
         if suggestion:
-            cutoff_label, evening_fixtures = suggestion
+            effective_cutoff, cutoff_label, evening_fixtures = suggestion
         else:
             evening_fixtures = all_fixtures
+            effective_cutoff = 0
 
     if not evening_fixtures:
         slack_post(f":warning: No MLB games found for {tomorrow_ct.isoformat()} — skipping HR Derby.")
@@ -544,6 +559,7 @@ def run_job(trigger_ts=None):
         [
             sys.executable, str(GENERATOR_SCRIPT),
             "--date", tomorrow_ct.isoformat(),
+            "--cutoff-hour", str(effective_cutoff),
             "--contestant-map", str(CONTESTANT_MAP),
             "--output", str(SCRIPT_DIR),
         ],
